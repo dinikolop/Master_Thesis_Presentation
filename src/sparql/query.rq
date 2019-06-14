@@ -4,4 +4,4 @@ prefix in:	<http://www.example.org/instance#>
 select ?x ?y ?z ((?y = ?z) as ?eq) where {
   ?x ex:p ?y .
   ?x ex:q ?z
-}
+} Group by ?x
