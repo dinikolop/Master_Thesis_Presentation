@@ -8,7 +8,7 @@
 
 @snap[south-east byline text-black text-06]
 Vrije Universiteit Amsterdam<br/>
-Articial Intelligence<br/>2<sup>nd</sup> KIM presentation<br/>
+Artificial Intelligence<br/>2<sup>nd</sup> KIM presentation<br/>
 Supervised by Prof. Annette ten Teije
 @snapend
 
@@ -558,7 +558,7 @@ Some projects:<br/>
 +++
 @title[PubMed as XML]
 @snap[north text-12 span-100]
-PubMed as XML <br><br>f
+PubMed as XML <br><br>
 
 @code[xml code-wrap text-08  code-reveal-fast](src/xml/example.xml)
 
