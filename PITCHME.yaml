@@ -59,8 +59,8 @@ transition : none
 # Twitter Card Settings
 # Doc: https://gitpitch.com/docs/settings/twitter-card
 #
-title : "GitPitch - The Quickstart Template"
-description : "High-utility markdown slide templates for GitPitch presentation authors."
-thumbnail : https://gitpitch.com/gpimg/the-template-thumb.jpg
+title : "Connecting patient groups to biomedical research: a Linked Data approach using ICD10 and PubMed"
+description : "Master Thesis of Dimitris Nikolopoulos - 2nd KIM presentation"
+thumbnail : assets/img/vu.png
 code-line-numbers : true
 mathjax : TeX-MML-AM_HTMLorMML-full
