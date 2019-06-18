@@ -1,0 +1,7 @@
+"Nijmegen University Hospital" | "Nijmegen University Medical" | "Radboud Hospital" |
+"Radboud Medical Center" | "Radboud Medical Centre" | "Radboud University Medical Center" |
+"Radboud University Medical Centre | "Radboud UMC" | "Radboud University Hospital" | "Radboudumc" |
+"StRadboud" | "St-Radboud" | "UMC Nijmegen" | "UMCN" | "University Hospital Nijmegen" |
+"University Medical Center Nijmegen" | "University Medical Centre Nijmegen" |
+"Radboud University Nijmegen Medical Centre" | "Radboud University Nijmegen Medical Center" |
+"6525GA" | "6525_GA" | "6525GA"

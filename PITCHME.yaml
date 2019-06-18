@@ -62,3 +62,5 @@ transition : none
 title : "GitPitch - The Quickstart Template"
 description : "High-utility markdown slide templates for GitPitch presentation authors."
 thumbnail : https://gitpitch.com/gpimg/the-template-thumb.jpg
+code-line-numbers : true
+mathjax : TeX-MML-AM_HTMLorMML-full

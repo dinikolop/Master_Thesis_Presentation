@@ -201,10 +201,10 @@ University Medical Centres (UMCs)
 @size[1.5em](Knowledge sources)
 @snapend
 
-@snap[west text-center span-50 text-07]
-<u>ICD10</u> <br/>
+@snap[west text-center span-40 text-07]
+<u>ICD10</u> <br/><br/>
 
-@ul[list-content-verbose list-bullets-black text-06](false)
+@ul[list-bullets-black text-07](false)
 
 - International Classification of Diseases - 10<sup>th</sup> revision
 - Reporting diagnosis codes for patients.
@@ -217,10 +217,10 @@ University Medical Centres (UMCs)
 
 @snapend
 
-@snap[east text-center text-07 span-50]
-<u>MeSH</u><br/>
+@snap[east text-center text-07 span-40]
+<u>MeSH</u><br/><br/>
 
-@ul[list-content-verbose list-bullets-black text-06](false)
+@ul[list-bullets-black text-07](false)
 
 - Medical Subject Headings
 - Controlled vocabulary created by NLM.
@@ -311,16 +311,128 @@ University Medical Centres (UMCs)
 @snapend
 
 +++?color=linear-gradient(135deg, #ffffff, #4487F2)
-@title[Second Subquestion]
+@title[Third Subquestion]
 
 @snap[midpoint text-09 span-100]
 @box[bg-white text-center text-09 box-wide-padding](3<sup>rd</sup> Sub-question # How can the Semantic Web technology of SPARQL be used for obtaining interesting insights about the patient groups and articles of a specific UMC?)
 @snapend
 
-@title[Some Preliminaries]
 
+
+---?color=linear-gradient(135deg, #fff1eb, #ffffff)
+@title[Some Preliminaries]
 ## @color[black](Some preliminaries)
 @fa[arrow-down text-black]
+
++++?color=linear-gradient(80deg, #fff1eb 50%, #4487F2 50%)
+@title[Contents]
+
+@snap[west text-center text-14 text-bold text-italic text-black  span-50]
+Preliminaries
+@snapend
+
+@snap[east text-center text-white span-45]
+@ol[split-screen-list text-06](false)
+- Ontology
+- Resource Description Framework (RDF)
+- Linked Data
+- SPARQL
+
+@olend
+@snapend
+
+
++++
+@title[Ontology]
+
+@snap[north span-100 text-12]
+Ontology <br/><br/>
+@fa[quote-left text-06](_A formal, explicit, shared specification of a conceptualization of a domain._)
+@snapend
+
+
+@snap[west text-center text-black span-45]
+<br/><br/>
+@ul[split-screen-list text-06](false)
+- Hierarchical concepts
+- Attributes & relations
+- Restrictions
+- Instances of concepts
+@ulend
+@snapend
+
+
+@snap[east text-center text-black span-45]
+<br/><br/><br/><br/>
+
+![onto](assets/img/ontology.png)
+@snapend
+
+
++++
+@title[RDF]
+@snap[north text-12]
+Resource Description Framework - RDF
+@snapend
+
+
+@snap[west text-center text-black span-100]
+<br/><br/><br/>
+@ul[list-content-concise text-08](false)
+- Represention: **triples** of subject-predicate-object
+  - Subject: a (web) resource
+  - Predicate: a relation connecting subject to object
+  - Object: web resource or a plain value<br/><br/>
+
+- A collection of triples is known as an **RDF graph**.
+- A collection of RDF graphs is an **RDF dataset**.
+  - An RDF dataset will be created for this project.
+@ulend
+@snapend
+
++++
+@title[RDF-Example]
+@snap[north text-12]
+RDF Example
+@snapend
+
+@snap[east span-50 fragment]
+![EXRDF](assets/img/sample_graph_ext.png)
+@snapend
+
+@snap[west span-50]
+![EXRDF](assets/img/examplerdf.png)
+@snapend
+
++++
+@title[Linked Data]
+@snap[north text-12]
+Linked Data
+@snapend
+
+
+@snap[west list-content-concise span-50]
+@size[0.8em](Main principles)
+@ol[text-05](false)
+- Use URIs/IRIs as names for resources.
+- Use HTTP/IRIs so that people can look up those names.
+- When someone looks up a URI/IRI, provide useful information.
+- Include links to other URIs/IRIs, so they can discover more things.
+@olend
+<br><br>
+@snapend
+
+@snap[east span-50]
+![LOD](assets/img/lod-cloud-sm.png)
+@snapend
+
+
++++
+@title[SPARQL]
+@snap[north text-12]
+SPARQL Protocol and RDF Query Language
+@snapend
+
 
 ---?color=linear-gradient(135deg, #fff1eb, #ffffff)
 
@@ -329,12 +441,471 @@ University Medical Centres (UMCs)
 ## @color[black](Methods)
 @fa[arrow-down text-black]
 
++++
+@title[Knowledge Model]
+@snap[north text-12]
+Knowledge Model <br/>
+@snapend
+
+@snap[west  span-100]
+Knowledge and reasoning features:<br/><br/>
+@ol[list-content-verbose](false)
+- Task knowledge: decomposing the task into inferences
+- Inference knowledge: modeling the main inference procedures
+- Domain knowledge: representing domain knowledge and knowledge base
+@olend
+<br><br>
+@snapend
+
++++
+@title[Task Knowledge]
+@snap[north text-12]
+Task Knowledge
+@snapend
+
+@snap[midpoint span-80]
+![TASK](assets/img/task.png)
+@snapend
+
++++
+@title[Inference Knowledge]
+@snap[north text-12]
+Inference Knowledge
+@snapend
+
+@snap[west span-50]
+![INFER1](assets/img/infer1.png)
+@snapend
+
+@snap[east span-50 fragment]
+![INFER1](assets/img/infer2.png)
+@snapend
+
++++
+@title[Domain Knowledge]
+@snap[north text-12]
+Domain Knowledge
+@snapend
+
+@snap[midpoint span-80 fragment]
+![INFER1](assets/img/domain.png)
+@snapend
+
++++
+@title[RDF graph aggregation]
+@snap[north text-12 span-60]
+Domain: aggregation of RDF graphs
+@snapend
+
+@snap[west  span-100]
+@ol[list-content-verbose]
+- **ICD10:** BioPortal
+- **MeSH:** BioPortal
+- **PubMed:** no maintained version
+- **Mappings:** BioPortal and SNOMED-CT mapping tool
+@olend
+@snapend
+
+
++++?color=linear-gradient(90deg, #ffffff 50% , #4487F2 50%)
+@title[BioPortal MeSH and ICD10]
+
+
+
+@snap[west span-40]
+#### MeSH
+
+@size[0.9em](**8.699.638** statements) <br/>
+@size[0.5em](<u>Metadata</u>)
+![MESHMETA](assets/img/mesh_meta.png) <br/>
+
+
+@size[0.5em](<u>Some statistics</u>)
+![MESHDATA](assets/img/mesh_data.png)
+@snapend
+
+@snap[east span-35]
+#### ICD10
+
+@size[0.9em](**85.597** statements) <br/>
+@size[0.5em](<u>Metadata</u>)
+![MESHMETA](assets/img/icd10_meta.png) <br/>
+
+
+@size[0.5em](<u>Some statistics</u>)
+![MESHDATA](assets/img/icd10_data.png)
+@snapend
+
++++
+@title[PubMed]
+@snap[north text-12]
+PubMed
+@snapend
+
+@snap[west text-black text-08]
+Some projects:<br/>
+@ul[](false)
+  - **bio2rdf** (PubMed not included in latest versions)
+  - **Biotea** (PubMed Central, No MeSH terms)
+@ulend  
+<br/>
+<br/>
+
+@ul[](false)
+- XML release by NLM each December
+- Updates on a daily basis
+- Extract-Transform-Load into Linked Data
+- Baseline: **2018**
+@ulend
+@snapend
+
+
+
+
++++
+@title[PubMed as XML]
+@snap[north text-12 span-100]
+PubMed as XML
+
+@code[xml code-wrap text-08  code-reveal-fast](src/xml/example.xml)
+
+@[1-13](MEDLINE citation info)
+@[15-27](Journal Info)
+@[40-48](Author list)
+@[90-100](MeSH Headings)
+@[136-160](PubMed Data)
+@snapend
+
++++
+@title[PubMed Domain Schema]
+
+@snap[west text-white text-08]
+@box[bg-blue](PubMed<br/>Domain<br/>Schema)
+@snapend
+
+@snap[east span-80]
+![PUBMEDSCHEMA](assets/img/Optimized-PubMed.jpg)
+
++++
+@title[RDFizing PubMed]
+
+@snap[north text-black ]
+RDF-izing PubMed<br>
+@snapend
+@snap[west list-content-concise text-black text-08]
+@ul[]
+- Create schema and keep in separate graph (Protege).
+- Transform XML files into RDF (Python-RDFLib):
+  - Use **HTTPS IRIs** (temporary solution: https://example.org/id/<an-id>)
+  - Create **unique resource IRIS** based on hashing resource attributes.
+  - Use IRIS, **instead of blank nodes** wherever possible.
+  - Assign **classes** to all resources.
+  - Assign proper **datatypes**, especially dates.
+  - **Data validation** (Python-Cerberus)
+  - **Annotations**
+  - Link MeSH resources of Pubmed to **MeSH**.
+@ulend
+@snapend
+
++++
+@title[PubMed as RDF]
+
+@snap[north text-black span-100]
+PubMed as RDF
+@code[xml text-07 code-reveal-fast](src/rdf/example.ttl)
+
+@[1-3](Prefixes)
+@[1-13](Article information)
+@[1-3, 14-24](MeSH Heading)
+@[25-32](Author and affiliation information)
+@[35-38](Publication Date of Issue)
+@snapend
+
++++
+@title[PubMed 2018 in numbers]
+
+@snap[north text-black]
+PubMed in Numbers
+@snapend
+
+@snap[midpoint text-07 span-90]
+
+**Total number of triples:** ~1.8B (plus ~1.5K in vocabulary)
+<br/><br/>
+@table[table-header](assets/csv/pubmed.csv)
+@snapend
+
+@snap[fragment south-east template-note text-orange]
+Create RDF subsets to optimize querying!
+@snapend
+
++++
+@title[Subset: Radboud UMC]
+@snap[north text-black]
+Subset: Radboud UMC
+@snapend
+
+@snap[midpoint]
+@ul[text-07](false)
+- An RDF graph subset based on authors' affiliations.
+- Regular expression string provided by PubMed expert:<br/><br/>
+@ulend
+@snap[text-05]
+@code[text](assets/files/string.txt)
+@snapend
+<br/>
+@ul[text-07](false)
+- Only articles and mesh headings links in the graphs:
+**id:&lt;article>  vocab:hasMeshHeading id:&lt;heading>**<br/><br/>
+- **Total number of triples:** ~370K
+- **Total number of articles found:** 23.745
+
+@ulend
+@snapend
+
+
++++
+@title[Community Based Mappings]
+@snap[north text-12 span-80]
+Community Based Mappings
+@snapend
+
+
+@snap[west list-content-verbose span-70]
+@ol[list-bullets-black]
+- **UMLS**  @fa[arrow-right] A frame-based Classification
+- **BioPortal** @fa[arrow-right] A _REST API_ for retrieving UMLS-based and string-based (LOOM) mappings
+- **SNOMED-CT Mapping tool** @fa[arrow-right] Mappings between ICD10CM and SNOMEDCT
+@olend
+<br><br>
+@snapend
+
+@snap[east span-30]
+![FRAME](assets/img/umls.png)
+@snapend
+
+
++++?color=linear-gradient(90deg, #fff1eb 50%, #4487F2 50%)
+@title[Source: Mappings]
+
+@snap[west list-content-verbose span-50]
+BioPortal-2018AA<br/><br/>
+@ol[list-bullets-black text-07](false)
+- **Source 1:** MeSH @fa[arrows-h] ICD10<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 2.263 mappings
+
+- **Source 2:** MeSH @fa[arrows-h] ICD10CM @fa[arrows-h] ICD10<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 2.949 mappings
+- **Source 3:** MeSH @fa[arrows-h] SNOMED @fa[arrows-h] ICD10<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 2.366 mappings
+@olend
+@snapend
+
+@snap[east list-content-concise fragment span-50]
+SNOMED-CT mapping tool<br/><br/>
+
+@ul[list-bullets-black text-06](false)
+- **I-MAGIC**: Algorithm that implements real-time mapping between SNOMEDCT and ICD10CM
+- All mappings are in a file that can be accessed with the UMLS or SNOMED License.
+- Version: March 2018 (same as with BioPortal)
+- Only **1-to-1** mappings considered:<br/>- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;78.954 mappings<br/>- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **4205** mappings with BioPortal
+@ulend
+@snapend
+
+@snap[south-west fragment span-50]
+@box[bg-green span-90](Union total: **5.699** mappings)
+@snapend
+
++++
+@title[Mapping evaluation]
+@snap[north text-12]
+Mapping evaluation
+@snapend
+
+@snap[west list-content-concise text-08 span-100]
+Consider 3 categories of mappings:<br/><br/>
+@ol[text-08](false)
+- Mappings achieved by all methods.
+- Mappings achieved only by SNOMED-CT mapping tool.
+- Mappings achieved by all BioPortal methods except of SNOMED-CT.
+
+@olend
+<br>
+<br>
+@ul[text-08](false)
+- Large enough samples.<br/>
+- Expert evaluation on a subset (**315** random mappings) : {relevant, irrelevant, ICD10 is broader, ICD10 is more specific, sibling}
+- **χ<sup>2</sup> test of homogeneity** on results.
+@ulend
+@snapend
+
 ---?color=linear-gradient(135deg, #fff1eb, #ffffff)
 
 @title[Analysis]
 
-## @color[black](Analysis)
+## @color[black](Results)
 @fa[arrow-down text-black]
+
++++
+@title[subquestion 1]
+@snap[midpoint  text-left span-100]
+@box[bg-blue text-08 text-left text-white](Sub-question 1 (**domain knowledge representation**) # <ul style="padding-left:50px"><li> **Patient groups** - BioPortal ICD10</li><li>**Publication & Topics** - Generated RDF graph of PubMed / BioPortal MeSH</li><li>**Mappings** - BioPortal & SNOMED-CT</li></ul><br><br>)
+@snapend
+
++++
+@title[subquestion 2]
+@snap[midpoint  text-left span-100]
+@box[bg-blue text-08 text-left text-white](Sub-question 2 (**mapping distribution and quality**) # <ol style="padding-left:50px"><li> **Expert evaluation** </li><li>**Test of homogeneity** </li><li>**What are the deviations from homogeneity?**</li></ol><br><br>)
+@snapend
+
++++
+
+@snap[midpoint list-content-verbose text-08 span-100]
+5 quality labels:<br/><br/>
+@ol[](false)
+- **Relevant**: the mapping between an ICD10 term and a MeSH term was rated as correct.
+- **ICD10-Specific**: the ICD10 term was rated as more specific than the MeSH term.
+- **ICD10-Generic**: the ICD10 term was rated as more generic than the MeSH term.
+- **Sibling**: the ICD10 term and the MeSH term are share the same parent category.
+- **Irrelevant**: the mapping between the ICD10 term and the MeSH term is irrelevant.
+@olend
+@snapend
+
+
++++
+@snap[midpoint list-content-verbose text-08 span-100]
+3 sets of random mappings (315 in total):<br/><br/>
+@ol[](false)
+- **Set 1**: the mappings were found by all methods.
+- **Set 2**: the mappings were found only by SNOMED-CT mapping tool.
+- **Set 3**: the mappings were found only through BioPortal methods.
+@olend
+@snapend
+
++++
+@snap[north span-100]
+Chi<sup>2</sup> test of homogeneity.
+@snap[text-left text-07]
+<br><br>
+H<sub>0</sub>: The distributions of the evaluations within the 3 sources are the same.
+@snapend
+@snapend
+@snap[midpoint span-100]
+<br><br>
+![CHI](assets/img/chi.png)
+@size[0.5em](<br>80% expected values is < 5 @fa[arrow-right] simulated p-value<br>α=0.05, p-value= <b>0.0004998</b>.<br>For 5% level of significance, there is significant evidence that the distribution is not the same amongst the 3 sources.)
+@snapend
+
++++
+@snap[north span-100]
+Deviations from homogeneity
+@snap[text-left text-07]
+<br><br>
+Look at the contribution of each entry of the table to the test statistic:<br><br>
+@snap[text-08]
+`\[
+  \frac{x - x_{expected}} {\sqrt {x_{expected}}}
+\]`
+@snapend
+@snapend
+@snapend
+@snap[midpoint span-100]
+<br><br>
+![CHI](assets/img/chi2.png)
+<br>
+@snapend
+
++++
+@title[TASK1]
+@snap[midpoint span-100 text-left]
+
+### <u>Task 1</u><br>
+Map all articles with:<br>
+@ol[](false)
+- at least one author affiliated to **RadboudUMC**,
+- publication date within the years **2015-17**, and
+- indexed MeSH of specific categories **{C, D, E, F, N}**
+@olend
+to ICD10 codes (patient groups).
+<br><br>
+**Inferences:** filter articles, group by MeSH, map
+@snapend
+
++++
+@title[SPARQL TASK1]
+@code[xml text-black code-wrap code-reveal-fast text-06](src/sparql/query.rq)
+
+@[1-8](Prefixes)
+@[10](Pair selection)
+@[11-14](Select all Radboud articles with their MeSH headings.)
+@[15-22](Filter by years of publication)
+@[23-26](Get PMIDs, and MeSH UIs - [group])
+@[29-33](Filter by specific MeSH tree categories)
+@[35-37](Get mappings)
+@[39-42](Use notation and label of ICD10 for readability)
+@[44-45](Order and limit)
+
+
++++?color=linear-gradient(135deg, #fff1eb, #4487F2)
+@title[Task results]
+
+Task Results: PubMed to ICD10
+![PAIRS1](assets/img/pairs1.png)
+
++++
+@title[TASK2]
+@snap[midpoint span-100 text-left]
+
+### <u>Task 2</u><br>
+Map patient groups from the ICD10 code C81 [Hodgin's Disease] including all the subclasses [C81.0-C81.9], to PubMed articles (with same filters as before).
+<br><br>
+**Inferences:** filter patient groups, group by C81, map
+@snapend
+
++++
+@title[SPARQL TASK2]
+@code[xml text-black code-wrap span-80  text-06](src/sparql/query2.rq)
+
+@[10](Pmid selection - assuming all mapped to C81)
+@[39-41](Use notation of ICD10 for readability)
+
+@snap[north-east template-note fragment text-black]
+@size[1.8em](**35 publications falling into C81**)
+@snapend
+
++++?color=linear-gradient(90deg, #fff1eb 30%, #4487F2 70%)
+@title[Top-50 ICD10]
+@snap[west text-06 span-20]
+Top-50 patient groups covered in research by Radboud UMC for 2015-17
+@snapend
+@snap[east span-80]
+![TOP50](assets/img/download.png)
+@snapend
+
+
++++
+@snap[north span-100 text-08]
+Research output per disease group (Radboud 2015-17)
+@snapend
+@snap[west span-50]
+![TOP50](assets/img/chart.svg)
+@snapend
+
+@snap[east span-50]
+![TOP50](assets/img/legend.png)
+@snapend
+
++++
+
+- Mapping Results
+ - Fisher test between:
+    - All agree
+    - Only SNOMEDCT
+    - Anything but SNOMED
+  - Insights
+- Most frequent ICD10 groups
+  - Tree diagram
+- Most frequent MeSH
+  - Tree diagram (?)
+- Correlation diagram
+
 
 ---?color=linear-gradient(135deg, #fff1eb, #ffffff)
 
@@ -343,8 +914,12 @@ University Medical Centres (UMCs)
 ## @color[black](Discussion)
 @fa[arrow-down text-black]
 
+TripleStore system
+Subquestion - answers
+Concerns? Future Work?
+
 ---
-@title[Questions #4]
+@title[Questions]
 
 @snap[east span-50]
 ![QUESTIONS-4](template/img/questions-4.png)
@@ -352,48 +927,4 @@ University Medical Centres (UMCs)
 
 @snap[south-west template-note text-gray]
 contact: d.nikolopoulos@vu.nl
-@snapend
-
-
-
----
-
-![TIP](template/img/tip.png)
-<br>
-For the best viewing experience, press F for fullscreen.
-@css[template-note](We recommend using the *SPACE* key to navigate between slides.)
-
----?include=template/md/split-screen/PITCHME.md
-
----?include=template/md/sidebar/PITCHME.md
-
----?include=template/md/list-content/PITCHME.md
-
----?include=template/md/boxed-text/PITCHME.md
-
----?include=template/md/image/PITCHME.md
-
----?include=template/md/sidebox/PITCHME.md
-
----?include=template/md/code-presenting/PITCHME.md
-
----?include=template/md/header-footer/PITCHME.md
-
----?include=template/md/quotation/PITCHME.md
-
----?include=template/md/announcement/PITCHME.md
-
----?include=template/md/about/PITCHME.md
-
----?include=template/md/wrap-up/PITCHME.md
-
----?image=template/img/presenter.jpg
-@title[The Template Docs]
-
-@snap[west sign-off]
-### Now it's your turn.
-@snapend
-
-@snap[south docslink text-gold span-100]
-For supporting documentation see the [The Template Docs](https://gitpitch.com/docs/the-template)
 @snapend

@@ -1,0 +1,38 @@
+PREFIX id: <https://example.org/id/>
+PREFIX vocab: <https://example.org/def/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+id:_fe8ab00ef57c24bbe8a063eefc8d760e a vocab:Article .
+id:_fe8ab00ef57c24bbe8a063eefc8d760e rdfs:label "28049943.1" .
+id:_fe8ab00ef57c24bbe8a063eefc8d760e rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/pubmed/28049943.1> .
+id:_fe8ab00ef57c24bbe8a063eefc8d760e vocab:PMID "28049943" .
+id:_fe8ab00ef57c24bbe8a063eefc8d760e vocab:hasAuthorList id:_d37c3f03cae0a449247c4be839f2f26f .
+id:_fe8ab00ef57c24bbe8a063eefc8d760e vocab:hasCitationStatus id:MEDLINE .
+id:_fe8ab00ef57c24bbe8a063eefc8d760e vocab:hasMeshHeading id:_d37c3f03cae0a449247c4be839f2f26f .
+......
+id:_d37c3f03cae0a449247c4be839f2f26f a pubmed:MeshHeading .
+id:_d37c3f03cae0a449247c4be839f2f26f rdfs:label "Fever*/blood" .
+id:_d37c3f03cae0a449247c4be839f2f26f vocab:majorDescriptor true .
+id:_d37c3f03cae0a449247c4be839f2f26f vocab:majorQualifier false .
+id:_d37c3f03cae0a449247c4be839f2f26f vocab:hasDescriptor id:_c4d419b22e6f671f2ebef33af3758bac .
+id:_d37c3f03cae0a449247c4be839f2f26f vocab:hasQualifier id:_06c5140f144ab717ad1f3913a7339bdd .
+......
+id:_c4d419b22e6f671f2ebef33af3758bac a vocab:MeshDescriptor .
+id:_c4d419b22e6f671f2ebef33af3758bac rdfs:label "Fever" .
+id:_c4d419b22e6f671f2ebef33af3758bac vocab:meshUI "D005334" .
+......
+id:_d37c3f03cae0a449247c4be839f2f26f a def:AuthorList .
+id:_d37c3f03cae0a449247c4be839f2f26f rdfs:label "Miyamoto T, Funakami Y, Kawashita E, Nomura A, Sugimoto N, Saeki H, Tsubota M, Ichida S, Kawabata A." .
+id:_d37c3f03cae0a449247c4be839f2f26f vocab:consistsOfAuthors (.., .., ...) .
+......
+id:_3a1b5308f3d34f77b431440bcaef3993 a vocab:Author .
+id:_3a1b5308f3d34f77b431440bcaef3993 rdfs:label "Miyamoto, Tomoyoshi, T" .
+id:_3a1b5308f3d34f77b431440bcaef3993 vocab:affiliatedTo id:_e60b289de8d34b252020f77bcc8f6b8f .
+......
+id:_e60b289de8d34b252020f77bcc8f6b8f a vocab:affiliationInformation .
+id:_e60b289de8d34b252020f77bcc8f6b8f vocab:affiliation "Faculty of Pharmacy, Kindai University." .
+......
+id:_fe8ab00ef57c24bbe8a063eefc8d760e vocab:isPartOf id:_872ad3338d705547e13af0548c590ac9 .
+id:_872ad3338d705547e13af0548c590ac9 a vocab:JournalIssue .
+id:_872ad3338d705547e13af0548c590ac9 vocab:issuePublishDate "2017-01-01"^^xsd:date .

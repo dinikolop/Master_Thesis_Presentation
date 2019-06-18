@@ -7,7 +7,7 @@ PREFIX pubmedDef: <https://example.org/def/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT DISTINCT (CONCAT(?notation, " ", ?label) as ?patient_group) ?pmid WHERE {
+SELECT DISTINCT ?pmid WHERE {
   # Get all Nijmegen Article/MeSH-Heading pairs
   GRAPH graph:nijmegen-articles {
     ?article pubmedDef:hasMeshHeading ?mh.
@@ -37,9 +37,7 @@ SELECT DISTINCT (CONCAT(?notation, " ", ?label) as ?patient_group) ?pmid WHERE {
   }
 
   GRAPH graph:ICD10 {
-    ?icd10 skos:notation ?icd10_code  ;
-    	     skos:prefLabel ?label .
+    ?icd10 skos:notation ?icd10_code .
+    FILTER(STRSTARTS(STR(?icd10_code), "C81"))
   }
 }
-ORDER BY ASC(?icd10_code)
-OFFSET 0 LIMIT 10000

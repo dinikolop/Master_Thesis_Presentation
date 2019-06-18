@@ -1,0 +1,167 @@
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">18251909</PMID>
+        <DateCompleted>
+            <Year>2008</Year>
+            <Month>05</Month>
+            <Day>07</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2018</Year>
+            <Month>12</Month>
+            <Day>01</Day>
+        </DateRevised>
+        <Article PubModel="Print">
+            <Journal>
+                <ISSN IssnType="Print">1471-1834</ISSN>
+                <JournalIssue CitedMedium="Print">
+                    <Volume>25</Volume>
+                    <Issue>1</Issue>
+                    <PubDate>
+                        <Year>2008</Year>
+                        <Month>Mar</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Health information and libraries journal</Title>
+                <ISOAbbreviation>Health Info Libr J</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Standardization of search methods for guideline development: an international survey of evidence-based guideline development groups.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>23-30</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1111/j.1471-1842.2007.00732.x</ELocationID>
+            <Abstract>
+                <AbstractText Label="BACKGROUND" NlmCategory="BACKGROUND">Effective literature searching is particularly important for clinical practice guideline development. Sophisticated searching and filtering mechanisms are needed to help ensure that all relevant research is reviewed.</AbstractText>
+                <AbstractText Label="PURPOSE" NlmCategory="OBJECTIVE">To assess the methods used for the selection of evidence for guideline development by evidence-based guideline development organizations.</AbstractText>
+                <AbstractText Label="METHODS" NlmCategory="METHODS">A semistructured questionnaire assessing the databases, search filters and evaluation methods used for literature retrieval was distributed to eight major organizations involved in evidence-based guideline development.</AbstractText>
+                <AbstractText Label="RESULTS" NlmCategory="RESULTS">All of the organizations used search filters as part of guideline development. The medline database was the primary source accessed for literature retrieval. The OVID or SilverPlatter interfaces were used in preference to the freely accessed PubMed interface. The Cochrane Library, embase, cinahl and psycinfo databases were also frequently used by the organizations. All organizations reported the intention to improve and validate their filters for finding literature specifically relevant for guidelines.</AbstractText>
+                <AbstractText Label="DISCUSSION" NlmCategory="CONCLUSIONS">In the first international survey of its kind, eight major guideline development organizations indicated a strong interest in identifying, improving and standardizing search filters to improve guideline development. It is to be hoped that this will result in the standardization of, and open access to, search filters, an improvement in literature searching outcomes and greater collaboration among guideline development organizations.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Deurenberg</LastName>
+                    <ForeName>Rikie</ForeName>
+                    <Initials>R</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Dutch Institute for Healthcare Improvement CBO, Utrecht, The Netherlands.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Vlayen</LastName>
+                    <ForeName>Joan</ForeName>
+                    <Initials>J</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Guillo</LastName>
+                    <ForeName>Sylvie</ForeName>
+                    <Initials>S</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Oliver</LastName>
+                    <ForeName>Thomas K</ForeName>
+                    <Initials>TK</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Fervers</LastName>
+                    <ForeName>Beatrice</ForeName>
+                    <Initials>B</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Burgers</LastName>
+                    <ForeName>Jako</ForeName>
+                    <Initials>J</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <CollectiveName>SEARCH Group</CollectiveName>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>England</Country>
+            <MedlineTA>Health Info Libr J</MedlineTA>
+            <NlmUniqueID>100970070</NlmUniqueID>
+            <ISSNLinking>1471-1834</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>H</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D015706" MajorTopicYN="N">Bibliometrics</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D016206" MajorTopicYN="N">Databases, Bibliographic</DescriptorName>
+                <QualifierName UI="Q000706" MajorTopicYN="Y">statistics &amp; numerical data</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005060" MajorTopicYN="N">Europe</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D019317" MajorTopicYN="Y">Evidence-Based Medicine</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006282" MajorTopicYN="N">Health Personnel</DescriptorName>
+                <QualifierName UI="Q000193" MajorTopicYN="N">education</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D016247" MajorTopicYN="N">Information Storage and Retrieval</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+                <QualifierName UI="Q000592" MajorTopicYN="Y">standards</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D033183" MajorTopicYN="N">Interdisciplinary Communication</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D011159" MajorTopicYN="N">Population Surveillance</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D017410" MajorTopicYN="Y">Practice Guidelines as Topic</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D013358" MajorTopicYN="N">Subject Headings</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009626" MajorTopicYN="N">Terminology as Topic</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D014584" MajorTopicYN="Y">User-Computer Interface</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2008</Year>
+                <Month>2</Month>
+                <Day>7</Day>
+                <Hour>9</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2008</Year>
+                <Month>5</Month>
+                <Day>8</Day>
+                <Hour>9</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2008</Year>
+                <Month>2</Month>
+                <Day>7</Day>
+                <Hour>9</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">18251909</ArticleId>
+            <ArticleId IdType="pii">HIR732</ArticleId>
+            <ArticleId IdType="doi">10.1111/j.1471-1842.2007.00732.x</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
