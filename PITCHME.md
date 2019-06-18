@@ -558,7 +558,7 @@ Some projects:<br/>
 +++
 @title[PubMed as XML]
 @snap[north text-12 span-100]
-PubMed as XML
+PubMed as XML <br><br>f
 
 @code[xml code-wrap text-08  code-reveal-fast](src/xml/example.xml)
 
@@ -583,7 +583,7 @@ PubMed as XML
 @title[RDFizing PubMed]
 
 @snap[north text-black ]
-RDF-izing PubMed<br>
+RDF-izing PubMed<br><br>
 @snapend
 @snap[west list-content-concise text-black text-08]
 @ul[]
@@ -603,13 +603,13 @@ RDF-izing PubMed<br>
 +++
 @title[PubMed as RDF]
 
-@snap[north text-black span-100]
-PubMed as RDF
-@code[xml text-07 code-reveal-fast](src/rdf/example.ttl)
+@snap[midpoint text-black span-100]
+PubMed as RDF<br><br>
+@code[rdf text-07 code-reveal-fast](src/rdf/example.ttl)
 
-@[1-3](Prefixes)
+@[1-4](Prefixes)
 @[1-13](Article information)
-@[1-3, 14-24](MeSH Heading)
+@[14-24](MeSH Heading)
 @[25-32](Author and affiliation information)
 @[35-38](Publication Date of Issue)
 @snapend
@@ -717,7 +717,7 @@ Consider 3 categories of mappings:<br/><br/>
 @ol[text-08](false)
 - Mappings achieved by all methods.
 - Mappings achieved only by SNOMED-CT mapping tool.
-- Mappings achieved by all BioPortal methods except of SNOMED-CT.
+- Mappings achieved only by BioPortal methodsf.
 
 @olend
 <br>
@@ -750,7 +750,7 @@ Consider 3 categories of mappings:<br/><br/>
 
 +++
 
-@snap[midpoint list-content-verbose text-08 span-100]
+@snap[midpoint list-content-verbose text-07 span-100]
 5 quality labels:<br/><br/>
 @ol[](false)
 - **Relevant**: the mapping between an ICD10 term and a MeSH term was rated as correct.
@@ -780,7 +780,7 @@ Chi<sup>2</sup> test of homogeneity.
 H<sub>0</sub>: The distributions of the evaluations within the 3 sources are the same.
 @snapend
 @snapend
-@snap[midpoint span-100]
+@snap[midpoint fragment span-100]
 <br><br><br>
 ![CHI](assets/img/chi.png)
 @size[0.5em](<br>80% expected values is < 5 @fa[arrow-right] simulated p-value<br>α=0.05, p-value= <b>0.0004998</b>.<br>For 5% level of significance, there is significant evidence that the distribution is not the same amongst the 3 sources.)
@@ -799,7 +799,7 @@ Look at the contribution of each entry of the table to the test statistic:<br><b
 @snapend
 @snapend
 @snapend
-@snap[midpoint span-100]
+@snap[fragment midpoint span-100]
 <br><br>
 ![CHI](assets/img/chi2.png)
 <br>
@@ -815,13 +815,13 @@ Look at the contribution of each entry of the table to the test statistic:<br><b
 @snap[midpoint span-100 text-left]
 
 ### <u>Task 1</u><br>
-Map all articles with:<br>
-@ol[](false)
+Map all articles with:<br><br>
+@ol[text-09](false)
 - at least one author affiliated to **RadboudUMC**,
 - publication date within the years **2015-17**, and
 - indexed MeSH of specific categories **{C, D, E, F, N}**
 @olend
-to ICD10 codes (patient groups).
+<br><br>to ICD10 codes (patient groups).
 <br><br>
 **Inferences:** filter articles, group by MeSH, map
 @snapend

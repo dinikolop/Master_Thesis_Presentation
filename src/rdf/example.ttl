@@ -1,11 +1,11 @@
-PREFIX id: <https://example.org/id/>
-PREFIX vocab: <https://example.org/def/>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX id: <https://example.org/id/ >
+PREFIX vocab: <https://example.org/def/ >
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns# >
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema# >
 
 id:_fe8ab00ef57c24bbe8a063eefc8d760e a vocab:Article .
 id:_fe8ab00ef57c24bbe8a063eefc8d760e rdfs:label "28049943.1" .
-id:_fe8ab00ef57c24bbe8a063eefc8d760e rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/pubmed/28049943.1> .
+id:_fe8ab00ef57c24bbe8a063eefc8d760e rdfs:seeAlso <https://www.ncbi.nlm.nih.gov/pubmed/28049943.1 > .
 id:_fe8ab00ef57c24bbe8a063eefc8d760e vocab:PMID "28049943" .
 id:_fe8ab00ef57c24bbe8a063eefc8d760e vocab:hasAuthorList id:_d37c3f03cae0a449247c4be839f2f26f .
 id:_fe8ab00ef57c24bbe8a063eefc8d760e vocab:hasCitationStatus id:MEDLINE .
