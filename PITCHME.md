@@ -788,7 +788,7 @@ H<sub>0</sub>: The distributions of the evaluations within the 3 sources are the
 @snapend
 @snapend
 @snap[midpoint span-100]
-<br><br>
+<br><br><br>
 ![CHI](assets/img/chi.png)
 @size[0.5em](<br>80% expected values is < 5 @fa[arrow-right] simulated p-value<br>α=0.05, p-value= <b>0.0004998</b>.<br>For 5% level of significance, there is significant evidence that the distribution is not the same amongst the 3 sources.)
 @snapend
