@@ -2,7 +2,7 @@
 @title[Introduction]
 
 @snap[west text-white span-80]
-@box[bg-blue](Connecting patient groups to biomedical research: a Linked Data approach using ICD10 and PubMed)
+@box[bg-blue](Dimitris Nikolopoulos # Connecting patient groups to biomedical research: a Linked Data approach using ICD10 and PubMed)
 @snapend
 
 
@@ -25,8 +25,7 @@ Outline
 - Research Framework
 - Some Preliminaries
 - Methods
-- Analysis
-- Discussion
+- Results & Analysis
 
 @olend
 @snapend
@@ -336,7 +335,8 @@ Preliminaries
 - Ontology
 - Resource Description Framework (RDF)
 - Linked Data
-- SPARQL
+@size[0.9em](SPARQL will be shown through results)
+
 
 @olend
 @snapend
@@ -424,13 +424,6 @@ Linked Data
 
 @snap[east span-50]
 ![LOD](assets/img/lod-cloud-sm.png)
-@snapend
-
-
-+++
-@title[SPARQL]
-@snap[north text-12]
-SPARQL Protocol and RDF Query Language
 @snapend
 
 
@@ -731,7 +724,7 @@ Consider 3 categories of mappings:<br/><br/>
 <br>
 @ul[text-08](false)
 - Large enough samples.<br/>
-- Expert evaluation on a subset (**315** random mappings) : {relevant, irrelevant, ICD10 is broader, ICD10 is more specific, sibling}
+- Expert evaluation on a subset (**315** random mappings)
 - **χ<sup>2</sup> test of homogeneity** on results.
 @ulend
 @snapend
@@ -740,7 +733,7 @@ Consider 3 categories of mappings:<br/><br/>
 
 @title[Analysis]
 
-## @color[black](Results)
+## @color[black](Results & Analysis)
 @fa[arrow-down text-black]
 
 +++
@@ -811,7 +804,12 @@ Look at the contribution of each entry of the table to the test statistic:<br><b
 ![CHI](assets/img/chi2.png)
 <br>
 @snapend
++++
+@title[subquestion 3]
+@snap[midpoint  text-left span-100]
+@box[bg-blue text-08 text-left text-white](Sub-question 3 (**using SPARQL**) # <span style="padding-left:50px">Let's see two tasks</span><br><br>)
 
+@snapend
 +++
 @title[TASK1]
 @snap[midpoint span-100 text-left]
@@ -827,6 +825,8 @@ to ICD10 codes (patient groups).
 <br><br>
 **Inferences:** filter articles, group by MeSH, map
 @snapend
+
+
 
 +++
 @title[SPARQL TASK1]
@@ -870,6 +870,9 @@ Map patient groups from the ICD10 code C81 [Hodgin's Disease] including all the 
 @size[1.8em](**35 publications falling into C81**)
 @snapend
 
++++
+## Some insights
+
 +++?color=linear-gradient(90deg, #fff1eb 30%, #4487F2 70%)
 @title[Top-50 ICD10]
 @snap[west text-06 span-20]
@@ -892,31 +895,42 @@ Research output per disease group (Radboud 2015-17)
 ![TOP50](assets/img/legend.png)
 @snapend
 
+
 +++
+@snap[north-west span-50 text-08]
+Scatterplot - 61 patient groups and publications for all evaluated mappings
+@snapend
+@snap[south-west span-50 text-04]
+![CORR](assets/img/allcorr.png)
+<br><br>
+Spearman Correlation Test: correlation=0.0217, pvalue=0.8678<br>
+![SPEAR](assets/img/allcorrt.png)
+@snapend
 
-- Mapping Results
- - Fisher test between:
-    - All agree
-    - Only SNOMEDCT
-    - Anything but SNOMED
-  - Insights
-- Most frequent ICD10 groups
-  - Tree diagram
-- Most frequent MeSH
-  - Tree diagram (?)
-- Correlation diagram
-
+@snap[fragment]
+@snap[north-east span-50 text-08]
+Scatterplot - 61 patient groups and publications for Relevant mappings
+@snapend
+@snap[south-east span-50 text-04]
+![CORR](assets/img/correlation.png)
+<br><br>
+Spearman Correlation Test: correlation=0.12017, p-value=0.356<br>
+![SPEAR](assets/img/spear.png)
+@snapend
+@snapend
 
 ---?color=linear-gradient(135deg, #fff1eb, #ffffff)
 
-@title[Discussion]
+@title[Next?]
 
-## @color[black](Discussion)
-@fa[arrow-down text-black]
-
-TripleStore system
-Subquestion - answers
-Concerns? Future Work?
+@snap[midpoint text-center text-black span-100]
+## Next?
+@ol[split-screen-list text-09](false)
+- A solid up-to-date triplestore system
+- Mapping evaluation techniques
+- Market share throughout UMCs
+@olend
+@snapend
 
 ---
 @title[Questions]
