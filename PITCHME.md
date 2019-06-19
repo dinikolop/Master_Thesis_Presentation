@@ -790,6 +790,8 @@ contact: d.nikolopoulos@vu.nl
 
 ---
 @title[Supplementary slides]
+## @color[black](Supplementary slides)
+@fa[arrow-down text-black]
 
 +++?image=template/img/bg/c1.jpg&position=center&size=100% 65%
 @title[Knowledge sources]
@@ -828,8 +830,7 @@ contact: d.nikolopoulos@vu.nl
 @ulend
 @snapend
 
-## @color[black](Supplementary slides)
-@fa[arrow-down text-black]
+
 
 
 +++
@@ -875,7 +876,7 @@ Knowledge model (3/4)
 Inference Knowledge
 @snapend
 
-@snap[midpoint span-50]
+@snap[west span-50]
 ![INFER1](assets/img/infer1.png)
 @snapend
 
