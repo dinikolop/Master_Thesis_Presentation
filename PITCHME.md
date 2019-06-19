@@ -26,7 +26,7 @@ Outline
 <!-- - Some Preliminaries -->
 - Methods
 - Results & Analysis
-- Discussion
+- Conclusions
 
 @olend
 @snapend
@@ -798,7 +798,7 @@ Spearman Correlation Test: correlation=0.12017, p-value=0.356<br>
 ---?color=linear-gradient(135deg, #fff1eb, #ffffff)
 @title[Discussion]
 
-## @color[black](Discussion)
+## @color[black](Conclusions)
 @fa[arrow-down text-black]
 
 
