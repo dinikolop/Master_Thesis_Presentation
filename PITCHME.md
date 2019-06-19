@@ -337,6 +337,10 @@ Outline
 @snapend
 
 +++
+@snap[south-west template-note text-gray]
+Knowledge model (1/4)
+@snapend
+
 @title[Knowledge Model]
 @snap[north text-12]
 Knowledge Model <br/>
@@ -353,6 +357,9 @@ Identify knowledge and reasoning features:<br/><br/>
 @snapend
 
 +++
+@snap[south-west template-note text-gray]
+Knowledge model (2/4)
+@snapend
 @title[Task Knowledge]
 @snap[north text-12]
 Task Knowledge
@@ -363,6 +370,10 @@ Task Knowledge
 @snapend
 
 +++
+@snap[south-west template-note text-gray]
+Knowledge model (3/4)
+@snapend
+
 @title[Inference Knowledge]
 @snap[north text-12]
 Inference Knowledge
@@ -379,6 +390,9 @@ Inference Knowledge
 -->
 
 +++
+@snap[south-west template-note text-gray]
+Knowledge model (4/4)
+@snapend
 @title[Domain Knowledge]
 @snap[north text-12]
 Domain Knowledge
@@ -389,6 +403,9 @@ Domain Knowledge
 @snapend
 
 +++
+@snap[south-west template-note text-gray]
+Domain Knowledge:aggregating RDF graphs (1/2)
+@snapend
 @title[RDF graph aggregation]
 @snap[north text-12 span-60]
 Domain: aggregation of RDF graphs
@@ -407,7 +424,9 @@ Domain: aggregation of RDF graphs
 +++?color=linear-gradient(90deg, #ffffff 50% , #4487F2 50%)
 @title[BioPortal MeSH and ICD10]
 
-
+@snap[south-west template-note text-gray]
+Domain Knowledge:aggregating RDF graphs (2/2)
+@snapend
 
 @snap[east fragment span-40]
 #### MeSH
@@ -434,6 +453,10 @@ Domain: aggregation of RDF graphs
 @snapend
 
 +++
+@snap[south-west template-note text-gray]
+PubMed (1/7)
+@snapend
+
 @title[PubMed]
 @snap[north text-12]
 PubMed
@@ -460,6 +483,9 @@ Some projects:<br/>
 
 
 +++
+@snap[south-west template-note text-gray]
+PubMed (2/7)
+@snapend
 @title[PubMed as XML]
 @snap[north text-12 span-100]
 PubMed as XML <br><br>
@@ -474,6 +500,9 @@ PubMed as XML <br><br>
 @snapend
 
 +++
+@snap[south-west template-note text-gray]
+PubMed (3/7)
+@snapend
 @title[PubMed Domain Schema]
 
 @snap[west text-white text-08]
@@ -484,6 +513,9 @@ PubMed as XML <br><br>
 ![PUBMEDSCHEMA](assets/img/Optimized-PubMed.jpg)
 
 +++
+@snap[south-west template-note text-gray]
+PubMed (4/7)
+@snapend
 @title[RDFizing PubMed]
 
 @snap[north text-black ]
@@ -509,6 +541,9 @@ PubMed as XML <br><br>
 @snapend
 
 +++
+@snap[south-west template-note text-gray]
+PubMed (5/7)
+@snapend
 @title[PubMed as RDF]
 
 @snap[midpoint text-black span-100]
@@ -523,6 +558,9 @@ PubMed as RDF<br><br>
 @snapend
 
 +++
+@snap[south-west template-note text-gray]
+PubMed (6/7)
+@snapend
 @title[PubMed 2018 in numbers]
 
 @snap[north text-black]
@@ -541,6 +579,9 @@ Create RDF subsets to optimize querying!
 @snapend
 
 +++
+@snap[south-west template-note text-gray]
+PubMed (7/7)
+@snapend
 @title[Subset: Radboud UMC]
 @snap[north text-black]
 Subset: Radboud UMC
@@ -566,6 +607,9 @@ Subset: Radboud UMC
 
 
 +++
+@snap[south-west template-note text-gray]
+Community based mappings (1/2)
+@snapend
 @title[Community Based Mappings]
 @snap[north text-12 span-80]
 Community Based Mappings
@@ -588,6 +632,9 @@ Community Based Mappings
 
 
 +++?color=linear-gradient(90deg, #fff1eb 50%, #4487F2 50%)
+@snap[south-west template-note text-gray]
+Community based mappings (2/2)
+@snapend
 @title[Source: Mappings]
 
 @snap[west text-center text-08 list-content-verbose span-50]
@@ -616,6 +663,9 @@ Community Based Mappings
 @snapend
 
 +++
+@snap[south-west template-note text-gray]
+Mappings evaluation (1/1)
+@snapend
 @title[Mapping evaluation]
 @snap[north text-12]
 Mapping evaluation
