@@ -58,6 +58,7 @@ Outline
 - **Domain:** Health/patient care in combination to biomedical research
 - **Problem:** Correlating patient groups to research output of academic hospitals
 - A task that requires **knowledge** and **knowledge intensive processes**
+- **Domain expert:** Rikie Deurenberg, Information Specialist
 @olend
 <br><br>
 @snapend
