@@ -50,7 +50,7 @@ Outline
 @title[Domain and Problem Statement]
 
 @snap[north span-100]
-@size[1.5em](Domain and problem area)
+@size[1.5em](Domain and problem)
 @snapend
 
 @snap[west list-content-verbose  span-100]
@@ -61,6 +61,10 @@ Outline
 @olend
 <br><br>
 @snapend
+
+Note:
+  - Health/Patient care domain: focuses on the diagnosis, treatment and prevention of diseases or other health conditions.
+  - Biomedical domain: research on developments on diseases diagnosis and treatments.
 
 +++?color=linear-gradient(90deg, #ffffff 50%, #4487F2 50%)
 @title[Text + Image Centered]
@@ -327,7 +331,6 @@ Outline
 +++
 @snap[midpoint text-center text-black span-100]
 @ol[split-screen-list text-09](false)
-- Knowledge Model
 - Domain knowledge: aggregating RDF graphs
 - Generation of a PubMed Ontology
 - Gathering Community Based mappings
@@ -336,71 +339,8 @@ Outline
 @olend
 @snapend
 
-+++
-@snap[south-west template-note text-gray]
-Knowledge model (1/4)
-@snapend
 
-@title[Knowledge Model]
-@snap[north text-12]
-Knowledge Model <br/>
-@snapend
 
-@snap[west  span-100]
-Identify knowledge and reasoning features:<br/><br/>
-@ol[list-content-verbose](false)
-- Task knowledge: decomposing the task into inferences
-- Inference knowledge: modeling the main inference procedures
-- Domain knowledge: representing domain schema and knowledge base
-@olend
-<br><br>
-@snapend
-
-+++
-@snap[south-west template-note text-gray]
-Knowledge model (2/4)
-@snapend
-@title[Task Knowledge]
-@snap[north text-12]
-Task Knowledge
-@snapend
-
-@snap[midpoint span-80]
-![TASK](assets/img/task.png)
-@snapend
-
-+++
-@snap[south-west template-note text-gray]
-Knowledge model (3/4)
-@snapend
-
-@title[Inference Knowledge]
-@snap[north text-12]
-Inference Knowledge
-@snapend
-
-@snap[midpoint span-50]
-![INFER1](assets/img/infer1.png)
-@snapend
-
-<!--
-@snap[east span-50 fragment]
-![INFER1](assets/img/infer2.png)
-@snapend
--->
-
-+++
-@snap[south-west template-note text-gray]
-Knowledge model (4/4)
-@snapend
-@title[Domain Knowledge]
-@snap[north text-12]
-Domain Knowledge
-@snapend
-
-@snap[midpoint span-80 fragment]
-![INFER1](assets/img/domain.png)
-@snapend
 
 +++
 @snap[south-west template-note text-gray]
@@ -408,7 +348,7 @@ Domain Knowledge:aggregating RDF graphs (1/2)
 @snapend
 @title[RDF graph aggregation]
 @snap[north text-12 span-60]
-Domain: aggregation of RDF graphs
+Domain Knowledge: aggregation of RDF graphs
 @snapend
 
 @snap[west  span-100]
@@ -606,34 +546,12 @@ Subset: Radboud UMC
 @snapend
 
 
-+++
-@snap[south-west template-note text-gray]
-Community based mappings (1/2)
-@snapend
-@title[Community Based Mappings]
-@snap[north text-12 span-80]
-Community Based Mappings
-@snapend
 
-
-@snap[west list-content-verbose span-100]
-@ol[list-bullets-black]
-- **BioPortal** @fa[arrow-right] A _REST API_ for retrieving UMLS-based and string-based (LOOM) mappings
-- **SNOMED-CT Mapping tool** @fa[arrow-right] A file containing mappings between ICD10CM and SNOMEDCT
-@olend
-<br><br>
-@snapend
-
-<!--
-@snap[east span-30]
-![FRAME](assets/img/umls.png)
-@snapend
--->
 
 
 +++?color=linear-gradient(90deg, #fff1eb 50%, #4487F2 50%)
 @snap[south-west template-note text-gray]
-Community based mappings (2/2)
+Community based mappings (1/1)
 @snapend
 @title[Source: Mappings]
 
@@ -704,7 +622,7 @@ Consider 3 categories of mappings:<br/><br/>
 +++
 @title[subquestion 2]
 @snap[midpoint  text-left span-100]
-@box[bg-blue text-08 text-left text-white](Sub-question 2 (**mapping distribution and quality**) # <ol style="padding-left:20px"><li>**Expert evaluation**<br/><br/></li><li>**Test of homogeneity**<br/><br/></li><li>**What are the deviations from homogeneity?**<br/><br/></li></ol><br><br>)
+@box[bg-blue text-08 text-left text-white](Sub-question 2 (**mapping distribution and quality**) # <ol style="padding-left:20px"><li>**Expert evaluation**<br/><br/></li><li>**Test of homogeneity**<br/><br/></li></ol><br><br>)
 @snapend
 
 +++
@@ -736,24 +654,7 @@ H<sub>0</sub>: The distributions of the evaluations within the 3 sources are the
 @snapend
 @snapend
 
-+++
-@snap[north span-100]
-Deviations from homogeneity
-@snap[text-left text-07]
-<br><br>
-Look at the contribution of each entry of the table to the test statistic:<br><br>
-@snap[text-08]
-`\[
-  \frac{x - x_{expected}} {\sqrt {x_{expected}}}
-\]`
-@snapend
-@snapend
-@snapend
-@snap[fragment midpoint span-100]
-<br><br>
-![CHI](assets/img/chi2.png)
-<br>
-@snapend
+
 +++
 @title[subquestion 3]
 @snap[midpoint  text-left span-100]
@@ -898,7 +799,7 @@ Spearman Correlation Test: correlation=0.12017, p-value=0.356<br>
 
 +++?color=linear-gradient(135deg, #fff1eb, #ffffff)
 
-@title[Next?]
+@title[Future work]
 
 @snap[midpoint text-center text-black span-100]
 
@@ -934,4 +835,95 @@ Spearman Correlation Test: correlation=0.12017, p-value=0.356<br>
 
 @snap[south-west template-note text-gray]
 contact: d.nikolopoulos@vu.nl
+@snapend
+
+---
+@title[Supplementary slides]
+
+## @color[black](Supplementary slides)
+@fa[arrow-down text-black]
+
+
++++
+@snap[south-west template-note text-gray]
+Knowledge model (1/4)
+@snapend
+
+@title[Knowledge Model]
+@snap[north text-12]
+Knowledge Model <br/>
+@snapend
+
+@snap[west  span-100]
+Identify knowledge and reasoning features:<br/><br/>
+@ol[list-content-verbose](false)
+- Task knowledge: decomposing the task into inferences
+- Inference knowledge: modeling the main inference procedures
+- Domain knowledge: representing domain schema and knowledge base
+@olend
+<br><br>
+@snapend
+
++++
+@snap[south-west template-note text-gray]
+Knowledge model (2/4)
+@snapend
+@title[Task Knowledge]
+@snap[north text-12]
+Task Knowledge
+@snapend
+
+@snap[midpoint span-80]
+![TASK](assets/img/task.png)
+@snapend
+
++++
+@snap[south-west template-note text-gray]
+Knowledge model (3/4)
+@snapend
+
+@title[Inference Knowledge]
+@snap[north text-12]
+Inference Knowledge
+@snapend
+
+@snap[midpoint span-50]
+![INFER1](assets/img/infer1.png)
+@snapend
+
+
+@snap[east span-50 fragment]
+![INFER1](assets/img/infer2.png)
+@snapend
+
++++
+@snap[south-west template-note text-gray]
+Knowledge model (4/4)
+@snapend
+@title[Domain Knowledge]
+@snap[north text-12]
+Domain Knowledge
+@snapend
+
+@snap[midpoint span-80 fragment]
+![INFER1](assets/img/domain.png)
+@snapend
+
++++
+@snap[north span-100]
+Deviations from homogeneity
+@snap[text-left text-07]
+<br><br>
+Look at the contribution of each entry of the table to the test statistic:<br><br>
+@snap[text-08]
+`\[
+  \frac{x - x_{expected}} {\sqrt {x_{expected}}}
+\]`
+@snapend
+@snapend
+@snapend
+@snap[fragment midpoint span-100]
+<br><br>
+![CHI](assets/img/chi2.png)
+<br>
 @snapend

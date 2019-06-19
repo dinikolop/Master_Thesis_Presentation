@@ -1,0 +1,66 @@
+<!--
++++
+@snap[south-west template-note text-gray]
+Knowledge model (1/4)
+@snapend
+
+@title[Knowledge Model]
+@snap[north text-12]
+Knowledge Model <br/>
+@snapend
+
+@snap[west  span-100]
+Identify knowledge and reasoning features:<br/><br/>
+@ol[list-content-verbose](false)
+- Task knowledge: decomposing the task into inferences
+- Inference knowledge: modeling the main inference procedures
+- Domain knowledge: representing domain schema and knowledge base
+@olend
+<br><br>
+@snapend
+
++++
+@snap[south-west template-note text-gray]
+Knowledge model (2/4)
+@snapend
+@title[Task Knowledge]
+@snap[north text-12]
+Task Knowledge
+@snapend
+
+@snap[midpoint span-80]
+![TASK](assets/img/task.png)
+@snapend
+
++++
+@snap[south-west template-note text-gray]
+Knowledge model (3/4)
+@snapend
+
+@title[Inference Knowledge]
+@snap[north text-12]
+Inference Knowledge
+@snapend
+
+@snap[midpoint span-50]
+![INFER1](assets/img/infer1.png)
+@snapend
+
+<!--
+@snap[east span-50 fragment]
+![INFER1](assets/img/infer2.png)
+@snapend
+
++++
+@snap[south-west template-note text-gray]
+Knowledge model (4/4)
+@snapend
+@title[Domain Knowledge]
+@snap[north text-12]
+Domain Knowledge
+@snapend -->
+
+@snap[midpoint span-80 fragment]
+![INFER1](assets/img/domain.png)
+@snapend
+-->
