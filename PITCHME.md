@@ -12,6 +12,10 @@ Artificial Intelligence<br/>2<sup>nd</sup> KIM presentation<br/>
 Supervised by Prof. Annette ten Teije
 @snapend
 
+Note:
+  - Introduce yourself
+  - following a Linked Data approach by using two sources: ICD10 and PubMed
+
 ---?color=linear-gradient(100deg, #fff1eb 50%, #4487F2 50%)
 @title[Outline]
 
@@ -21,7 +25,7 @@ Outline
 
 @snap[east text-center text-white span-45]
 @ol[split-screen-list text-09](false)
-- Context & Use Case
+- Problem Statement & Use Case
 - Research Framework
 <!-- - Some Preliminaries -->
 - Methods
@@ -34,9 +38,9 @@ Outline
 
 ---?color=linear-gradient(135deg, #fff1eb, #ffffff)
 
-@title[Context & Use Case]
+@title[Problem Statement & Use Case]
 
-## @color[black](Context & Use Case)
+## @color[black](Problem Statement & Use Case)
 @fa[arrow-down text-black]
 
 
@@ -321,6 +325,18 @@ Outline
 @fa[arrow-down text-black]
 
 +++
+@snap[midpoint text-center text-black span-100]
+@ol[split-screen-list text-09](false)
+- Knowledge Model
+- Domain knowledge: aggregating RDF graphs
+- Generation of a PubMed Ontology
+- Gathering Community Based mappings
+- Mapping Evaluation
+
+@olend
+@snapend
+
++++
 @title[Knowledge Model]
 @snap[north text-12]
 Knowledge Model <br/>
@@ -331,7 +347,7 @@ Identify knowledge and reasoning features:<br/><br/>
 @ol[list-content-verbose](false)
 - Task knowledge: decomposing the task into inferences
 - Inference knowledge: modeling the main inference procedures
-- Domain knowledge: representing domain knowledge and knowledge base
+- Domain knowledge: representing domain schema and knowledge base
 @olend
 <br><br>
 @snapend
@@ -352,13 +368,15 @@ Task Knowledge
 Inference Knowledge
 @snapend
 
-@snap[west span-50]
+@snap[midpoint span-50]
 ![INFER1](assets/img/infer1.png)
 @snapend
 
+<!--
 @snap[east span-50 fragment]
 ![INFER1](assets/img/infer2.png)
 @snapend
+-->
 
 +++
 @title[Domain Knowledge]
@@ -469,12 +487,15 @@ PubMed as XML <br><br>
 @title[RDFizing PubMed]
 
 @snap[north text-black ]
-RDF-izing PubMed<br><br>
+### RDF-izing PubMed<br><br>
 @snapend
-@snap[west list-content-concise text-black text-08]
+@snap[west list-content-verbose text-black]
 @ul[]
 - Create schema and keep in separate graph (Protege).
-- Transform XML files into RDF (Python-RDFLib):
+- Transform XML files into RDF (Python-RDFLib).
+- Link the generated MeSH terms of PubMed to the MeSH BioPortal ontology
+
+  <!--
   - Use **HTTPS IRIs** (temporary solution: https://example.org/id/<an-id>)
   - Create **unique resource IRIS** based on hashing resource attributes.
   - Use IRIS, **instead of blank nodes** wherever possible.
@@ -483,6 +504,7 @@ RDF-izing PubMed<br><br>
   - **Data validation** (Python-Cerberus)
   - **Annotations**
   - Link MeSH resources of Pubmed to **MeSH**.
+  -->
 @ulend
 @snapend
 
@@ -550,25 +572,28 @@ Community Based Mappings
 @snapend
 
 
-@snap[west list-content-verbose span-70]
+@snap[west list-content-verbose span-100]
 @ol[list-bullets-black]
-- **UMLS**  @fa[arrow-right] A frame-based Classification
 - **BioPortal** @fa[arrow-right] A _REST API_ for retrieving UMLS-based and string-based (LOOM) mappings
-- **SNOMED-CT Mapping tool** @fa[arrow-right] Mappings between ICD10CM and SNOMEDCT
+- **SNOMED-CT Mapping tool** @fa[arrow-right] A file containing mappings between ICD10CM and SNOMEDCT
 @olend
 <br><br>
 @snapend
 
+<!--
 @snap[east span-30]
 ![FRAME](assets/img/umls.png)
 @snapend
+-->
 
 
 +++?color=linear-gradient(90deg, #fff1eb 50%, #4487F2 50%)
 @title[Source: Mappings]
 
-@snap[west list-content-verbose span-50]
-BioPortal-2018AA<br/><br/>
+@snap[west text-center text-08 list-content-verbose span-50]
+
+**BioPortal** @fa[arrow-right] A _REST API_ for retrieving UMLS-based and string-based (LOOM) mappings (version: 2018AA)<br/><br/>
+
 @ol[list-bullets-black text-07](false)
 - **Source 1:** MeSH @fa[arrows-h] ICD10<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 2.263 mappings
 
@@ -577,11 +602,10 @@ BioPortal-2018AA<br/><br/>
 @olend
 @snapend
 
-@snap[east list-content-concise fragment span-50]
-SNOMED-CT mapping tool<br/><br>
+@snap[east list-content-verbose text-center text-08 fragment span-50]
+**SNOMED-CT Mapping tool** @fa[arrow-right] A file containing mappings between ICD10CM and SNOMEDCT<br/>
 
-@ul[list-bullets-black text-07](false)
-- Mappings between SNOMED and ICD10CM
+@ul[list-bullets-black text-08](false)
 - All mappings are in a file that can be accessed with the UMLS or SNOMED License.
 - Version: March 2018 (same as with BioPortal)
 - Only **1-to-1** mappings considered:<br/>- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;78.954 mappings<br/>- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **4205** mappings with BioPortal
@@ -830,9 +854,9 @@ Spearman Correlation Test: correlation=0.12017, p-value=0.356<br>
 
 ## Future Work
 @ol[split-screen-list text-09](false)
-- A solid up-to-date triplestore system
+- Keeping the system up-to-date (latest PubMed and BioPortal versions)
 - Mapping evaluation techniques
-- Market share throughout UMCs
+- Correlation scores throughout UMCs
 @olend
 @snapend
 
@@ -840,14 +864,14 @@ Spearman Correlation Test: correlation=0.12017, p-value=0.356<br>
 @title[References]
 ### References
 @ul[text-05](false)
-- van de Laar, L., de Kruif, T., Waltman, L., Meijer, I., Gupta, A., & Hagenaars, N. (2018). Improving the evaluation of worldwide biomedical research output: classification method and standardised bibliometric indicators by disease. BMJ open, 8(6), e020818.
+- Cardillo, E. (2015). Mapping between international medical terminologies.
 - Castro, L. J. G., McLaughlin, C., & Garcia, A. (2013, April). Biotea: RDFizing PubMed Central in support for the paper as an interface to the Web of Data. In Journal of biomedical semantics (Vol. 4, No. 1, p. S5). BioMed Central.
-- Yang, H., Robinson, P. N., & Wang, K. (2015). Phenolyzer: phenotype-based prioritization of candidate genes for human diseases. Nature methods, 12(9), 841.
+- Harrow, I., Jiménez-Ruiz, E., Splendiani, A., Romacker, M., Woollard, P., Markel, S., ... & Waaler, A. (2017). Matching disease and phenotype ontologies in the ontology alignment evaluation initiative. Journal of biomedical semantics, 8(1), 55.
+- Merabti, T., Joubert, M., Lecroq, T., Rath, A., & Darmoni, S. J. (2010). Mapping biomedical terminologies using natural language processing tools and UMLS: mapping the Orphanet thesaurus to the MeSH. Irbm, 31(4), 221-225.
+- Noy, N. F., Griffith, N., & Musen, M. A. (2008, October). Collecting community-based mappings in an ontology repository. In International Semantic Web Conference (pp. 371-386). Springer, Berlin, Heidelberg.
 - Salvadores, M., Horridge, M., Alexander, P. R., Fergerson, R. W., Musen, M. A., & Noy, N. F. (2012, November). Using sparql to query bioportal ontologies and metadata. In International Semantic Web Conference (pp. 180-195). Springer, Berlin, Heidelberg.
 - Haendel, M. A., McMurry, J. A., Relevo, R., Mungall, C. J., Robinson, P. N., & Chute, C. G. (2018). A census of disease ontologies. Annual Review of Biomedical Data Science, 1, 305-331.
-- Noy, N. F., Griffith, N., & Musen, M. A. (2008, October). Collecting community-based mappings in an ontology repository. In International Semantic Web Conference (pp. 371-386). Springer, Berlin, Heidelberg.
-- Merabti, T., Joubert, M., Lecroq, T., Rath, A., & Darmoni, S. J. (2010). Mapping biomedical terminologies using natural language processing tools and UMLS: mapping the Orphanet thesaurus to the MeSH. Irbm, 31(4), 221-225.
-- Cardillo, E. (2015). Mapping between international medical terminologies.
+- van de Laar, L., de Kruif, T., Waltman, L., Meijer, I., Gupta, A., & Hagenaars, N. (2018). Improving the evaluation of worldwide biomedical research output: classification method and standardised bibliometric indicators by disease. BMJ open, 8(6), e020818.
 @ulend
 
 
