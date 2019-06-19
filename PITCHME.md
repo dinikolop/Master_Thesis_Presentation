@@ -608,7 +608,7 @@ Consider 3 categories of mappings:<br/><br/>
 @ol[text-08](false)
 - Mappings achieved by all methods.
 - Mappings achieved only by SNOMED-CT mapping tool.
-- Mappings achieved only by BioPortal methodsf.
+- Mappings achieved only by BioPortal methods.
 
 @olend
 <br>
@@ -630,36 +630,25 @@ Consider 3 categories of mappings:<br/><br/>
 +++
 @title[subquestion 1]
 @snap[midpoint  text-left span-100]
-@box[bg-blue text-08 text-left text-white](Sub-question 1 (**domain knowledge representation**) # <ul style="padding-left:50px"><li> **Patient groups** - BioPortal ICD10</li><li>**Publication & Topics** - Generated RDF graph of PubMed / BioPortal MeSH</li><li>**Mappings** - BioPortal & SNOMED-CT</li></ul><br><br>)
+@box[bg-blue text-08 text-left text-white](Sub-question 1 (**domain knowledge representation**) # <ol style="padding-left:20px"><li> **Patient groups** - BioPortal ICD10<br/><br/></li><li>**Publication & Topics** - Generated RDF graph of PubMed / BioPortal MeSH<br/><br/></li><li>**Mappings** - BioPortal & SNOMED-CT</li></ol><br><br>)
 @snapend
 
 +++
 @title[subquestion 2]
 @snap[midpoint  text-left span-100]
-@box[bg-blue text-08 text-left text-white](Sub-question 2 (**mapping distribution and quality**) # <ol style="padding-left:50px"><li> **Expert evaluation** </li><li>**Test of homogeneity** </li><li>**What are the deviations from homogeneity?**</li></ol><br><br>)
+@box[bg-blue text-08 text-left text-white](Sub-question 2 (**mapping distribution and quality**) # <ol style="padding-left:20px"><li>**Expert evaluation**<br/><br/></li><li>**Test of homogeneity**<br/><br/></li><li>**What are the deviations from homogeneity?**<br/><br/></li></ol><br><br>)
 @snapend
 
 +++
 
-@snap[midpoint list-content-verbose text-07 span-100]
+@snap[midpoint list-content-verbose  span-100]
 5 quality labels:<br/><br/>
 @ol[](false)
-- **Relevant**: the mapping between an ICD10 term and a MeSH term was rated as correct.
-- **ICD10-Specific**: the ICD10 term was rated as more specific than the MeSH term.
-- **ICD10-Generic**: the ICD10 term was rated as more generic than the MeSH term.
-- **Sibling**: the ICD10 term and the MeSH term are share the same parent category.
-- **Irrelevant**: the mapping between the ICD10 term and the MeSH term is irrelevant.
-@olend
-@snapend
-
-
-+++
-@snap[midpoint list-content-verbose text-08 span-100]
-3 sets of random mappings (315 in total):<br/><br/>
-@ol[](false)
-- **Set 1**: the mappings were found by all methods.
-- **Set 2**: the mappings were found only by SNOMED-CT mapping tool.
-- **Set 3**: the mappings were found only through BioPortal methods.
+- **Relevant**
+- **ICD10-Specific**
+- **ICD10-Generic**
+- **Sibling**
+- **Irrelevant**
 @olend
 @snapend
 
@@ -674,7 +663,9 @@ H<sub>0</sub>: The distributions of the evaluations within the 3 sources are the
 @snap[midpoint fragment span-100]
 <br><br><br>
 ![CHI](assets/img/chi.png)
-@size[0.5em](<br>80% expected values is < 5 @fa[arrow-right] simulated p-value<br>α=0.05, p-value= <b>0.0004998</b>.<br>For 5% level of significance, there is significant evidence that the distribution is not the same amongst the 3 sources.)
+@snap[fragment]
+@size[0.5em](80% expected values is < 5 @fa[arrow-right] simulated p-value<br>α=0.05, p-value= <b>0.0004998</b>.<br>For 5% level of significance, there is significant evidence that the distribution is not the same amongst the 3 sources.)
+@snapend
 @snapend
 
 +++
@@ -724,14 +715,14 @@ Map all articles with:<br><br>
 @code[xml text-black code-wrap code-reveal-fast text-06](src/sparql/query.rq)
 
 @[1-8, zoom-15](Prefixes)
-@[10](Pair selection)
-@[11-14](Select all Radboud articles with their MeSH headings.)
-@[15-22](Filter by years of publication)
-@[23-26](Get PMIDs, and MeSH UIs - [group])
-@[29-33](Filter by specific MeSH tree categories)
-@[35-37](Get mappings)
-@[39-42](Use notation and label of ICD10 for readability)
-@[44-45](Order and limit)
+@[10, zoom-14](Pair selection)
+@[11-14, zoom-18](Select all Radboud articles with their MeSH headings.)
+@[15-22, zoom-14](Filter by years of publication)
+@[23-26, zoom-18](Get PMIDs, and MeSH UIs - [group])
+@[29-33, zoom-15](Filter by specific MeSH tree categories)
+@[35-37, zoom-18](Get mappings)
+@[39-42, zoom-18](Use notation and label of ICD10 for readability)
+@[44-45, zoom-18](Order and limit)
 
 
 +++?color=linear-gradient(135deg, #fff1eb, #4487F2)
@@ -754,10 +745,10 @@ Map patient groups from the ICD10 code C81 [Hodgin's Disease] including all the 
 @title[SPARQL TASK2]
 @code[xml text-black code-wrap span-80  text-06](src/sparql/query2.rq)
 
-@[10](Pmid selection - assuming all mapped to C81)
-@[39-41](Use notation of ICD10 for readability)
+@[10, zoom-18](Pmid selection - assuming all mapped to C81)
+@[39-41, zoom-18](Use notation of ICD10 for readability)
 
-@snap[north-east template-note fragment text-black]
+@snap[midpoint template-note fragment text-black]
 @size[1.8em](**35 publications falling into C81**)
 @snapend
 
@@ -766,7 +757,7 @@ Map patient groups from the ICD10 code C81 [Hodgin's Disease] including all the 
 
 +++?color=linear-gradient(90deg, #fff1eb 30%, #4487F2 70%)
 @title[Top-50 ICD10]
-@snap[west text-06 span-20]
+@snap[west text-07 span-20]
 Top-50 patient groups covered in research by Radboud UMC for 2015-17
 @snapend
 @snap[east span-80]
@@ -791,7 +782,7 @@ Research output per disease group (Radboud 2015-17)
 @snap[north-west span-50 text-08]
 Scatterplot - 61 patient groups and publications for all evaluated mappings
 @snapend
-@snap[south-west span-50 text-04]
+@snap[south-west span-50 text-06]
 ![CORR](assets/img/allcorr.png)
 <br><br>
 Spearman Correlation Test: correlation=0.0217, pvalue=0.8678<br>
@@ -802,7 +793,7 @@ Spearman Correlation Test: correlation=0.0217, pvalue=0.8678<br>
 @snap[north-east span-50 text-08]
 Scatterplot - 61 patient groups and publications for Relevant mappings
 @snapend
-@snap[south-east span-50 text-04]
+@snap[south-east span-50 text-06]
 ![CORR](assets/img/correlation.png)
 <br><br>
 Spearman Correlation Test: correlation=0.12017, p-value=0.356<br>
@@ -811,17 +802,60 @@ Spearman Correlation Test: correlation=0.12017, p-value=0.356<br>
 @snapend
 
 ---?color=linear-gradient(135deg, #fff1eb, #ffffff)
+@title[Discussion]
+
+## @color[black](Discussion)
+@fa[arrow-down text-black]
+
+
++++?color=linear-gradient(135deg, #fff1eb, #ffffff)
+
+## Important outcomes
+@ol[split-screen-list text-09](false)
+- Gathered required knowledge in a single place
+- PubMed in RDF
+- SPARQL expression power for getting insights
+@olend
+@snapend
+
++++?color=linear-gradient(135deg, #fff1eb, #ffffff)
+## Limitations
+@ol[split-screen-list text-09](false)
+- Correctness of ontologies, e.g. ICD10 was missing some hierarchies.
+- Mappings do not necessarily show synonymity.
+- SPARQL query timeouts (use of ASK queries?)
+@olend
+@snapend
+
+
++++?color=linear-gradient(135deg, #fff1eb, #ffffff)
 
 @title[Next?]
 
 @snap[midpoint text-center text-black span-100]
-## Next?
+
+## Future Work
 @ol[split-screen-list text-09](false)
 - A solid up-to-date triplestore system
 - Mapping evaluation techniques
 - Market share throughout UMCs
 @olend
 @snapend
+
+---
+@title[References]
+### References
+@ul[text-05](false)
+- van de Laar, L., de Kruif, T., Waltman, L., Meijer, I., Gupta, A., & Hagenaars, N. (2018). Improving the evaluation of worldwide biomedical research output: classification method and standardised bibliometric indicators by disease. BMJ open, 8(6), e020818.
+- Castro, L. J. G., McLaughlin, C., & Garcia, A. (2013, April). Biotea: RDFizing PubMed Central in support for the paper as an interface to the Web of Data. In Journal of biomedical semantics (Vol. 4, No. 1, p. S5). BioMed Central.
+- Yang, H., Robinson, P. N., & Wang, K. (2015). Phenolyzer: phenotype-based prioritization of candidate genes for human diseases. Nature methods, 12(9), 841.
+- Salvadores, M., Horridge, M., Alexander, P. R., Fergerson, R. W., Musen, M. A., & Noy, N. F. (2012, November). Using sparql to query bioportal ontologies and metadata. In International Semantic Web Conference (pp. 180-195). Springer, Berlin, Heidelberg.
+- Haendel, M. A., McMurry, J. A., Relevo, R., Mungall, C. J., Robinson, P. N., & Chute, C. G. (2018). A census of disease ontologies. Annual Review of Biomedical Data Science, 1, 305-331.
+- Noy, N. F., Griffith, N., & Musen, M. A. (2008, October). Collecting community-based mappings in an ontology repository. In International Semantic Web Conference (pp. 371-386). Springer, Berlin, Heidelberg.
+- Merabti, T., Joubert, M., Lecroq, T., Rath, A., & Darmoni, S. J. (2010). Mapping biomedical terminologies using natural language processing tools and UMLS: mapping the Orphanet thesaurus to the MeSH. Irbm, 31(4), 221-225.
+- Cardillo, E. (2015). Mapping between international medical terminologies.
+@ulend
+
 
 ---
 @title[Questions]
