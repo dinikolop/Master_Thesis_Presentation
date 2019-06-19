@@ -20,12 +20,13 @@ Outline
 @snapend
 
 @snap[east text-center text-white span-45]
-@ol[split-screen-list text-06](false)
+@ol[split-screen-list text-09](false)
 - Context & Use Case
 - Research Framework
-- Some Preliminaries
+<!-- - Some Preliminaries -->
 - Methods
 - Results & Analysis
+- Discussion
 
 @olend
 @snapend
@@ -40,6 +41,10 @@ Outline
 
 
 +++?image=template/img/bg/c1.jpg&position=center&size=100% 65%
+@snap[south-east template-note text-black]
+Context & use case (1/7)
+@snapend
+
 @title[Domain and Problem Statement]
 
 @snap[north span-100]
@@ -57,6 +62,10 @@ Outline
 
 +++?color=linear-gradient(90deg, #ffffff 50%, #4487F2 50%)
 @title[Text + Image Centered]
+@snap[south-east template-note text-black]
+Context & use case (2/7)
+@snapend
+
 
 @snap[north-west span-40 text-center]
 @color[#text-black](@size[1em](<u>Knowledge</u>))
@@ -95,12 +104,12 @@ Outline
 +++?image=template/img/bg/c1.jpg&position=bottom&size=100% 75%
 @title[Use Case]
 @snap[north span-100]
-@size[1.5em](Use Case)
+@size[1.7em](Use Case)
 
 @snap[fragment]
 @snap[span-80]
 <br/><br/>
-University Medical Centres (UMCs)
+#### University Medical Centres (UMCs)
 @snapend
 
 @snap[east span-20]
@@ -112,29 +121,21 @@ University Medical Centres (UMCs)
 
 
 @snap[south-west text-center span-30 fragment]
-@size[0.4em](**Bridging three scopes**)
+@size[0.7em](**Bridging three scopes**)
 ![NFU](assets/img/bridge.png)
 @snapend
 
 @snap[south span-30 text-center fragment]
-@size[0.4em](**Citation scores above the world average**)
+@size[0.7em](**Citation scores above the world average**)
 ![NFU](assets/img/citation-impact-by-unive.png)
 <br/>
-@size[0.2em](Source: <a href="https://www.rathenau.nl/en/science-figures/output/publications/citation-impact-score-dutch-universities" >Rathenau Instituut</a>)
+@size[0.4em](Source: <a href="https://www.rathenau.nl/en/science-figures/output/publications/citation-impact-score-dutch-universities" >Rathenau Instituut</a>)
 @snapend
 
-@snap[south-east text-center span-33 list-content-concise text-04 fragment]
-@size[1.1em](**ROBIJN project**)
+@snap[south-east text-center span-33 list-content-concise text-08 fragment]
+@size[1.3em](**ROBIJN project**)
 @ul[]()
-- Special patient groups:
-  - with role to scientific developments.
-  - frequently treated in UMCs.
-- Distinguish these groups as **academic**.
-- A model using labels.
-- **9 labels**, 1 particular of interest: **"Science"**
-  - Scientific output should cover developments in these patient groups
-  - Objective linking between patients and scientific output.
-
+  - Objective linking between "academic" patients and scientific output.
 @ulend
 <br><br>
 @snapend
@@ -145,7 +146,7 @@ University Medical Centres (UMCs)
 +++?image=template/img/bg/c1.jpg&position=center&size=100% 65%
 @title[Opportunity]
 @snap[north span-100]
-@size[1.5em](A.I. Opportunity)
+@size[1.5em](Opportunity)
 @snapend
 
 
@@ -161,9 +162,9 @@ University Medical Centres (UMCs)
 
 
 +++
-@title[Interoperability]
+@title[Interoperability Problem]
 @snap[north span-100]
-@size[1.5em](Interoperability)
+@size[1.5em](Interoperability Problem)
 @snapend
 
 
@@ -200,10 +201,10 @@ University Medical Centres (UMCs)
 @size[1.5em](Knowledge sources)
 @snapend
 
-@snap[west text-center span-40 text-07]
+@snap[west text-center span-50 text-08]
 <u>ICD10</u> <br/><br/>
 
-@ul[list-bullets-black text-07](false)
+@ul[list-bullets-black text-08](false)
 
 - International Classification of Diseases - 10<sup>th</sup> revision
 - Reporting diagnosis codes for patients.
@@ -216,15 +217,15 @@ University Medical Centres (UMCs)
 
 @snapend
 
-@snap[east text-center text-07 span-40]
+@snap[east text-center fragment text-08 span-50]
 <u>MeSH</u><br/><br/>
 
-@ul[list-bullets-black text-07](false)
+@ul[list-bullets-black text-08](false)
 
 - Medical Subject Headings
 - Controlled vocabulary created by NLM.
 - Hierarchical terminology for indexing biomedical info
-- Indexing of citation in MEDLINE Database
+- Indexing of MEDLINE citations
 - MEDLINE is accessed by **PubMed**:
     - database, search engine for biomedical articles
     - over 29 million citations
@@ -290,7 +291,7 @@ University Medical Centres (UMCs)
 @title[Main Research Question]
 
 @snap[midpoint span-100]
-@box[bg-white text-center text-09 box-wide-padding](Main Research Question # How can investigation of the correlation between patient groups and academic articles be achieved by following a Knowledge Engineering approach using Semantic Web technologies?)
+@box[bg-white text-center text-09 box-wide-padding](Main Research Question # How can we investigate the correlation between patient groups and academic articles by following a Knowledge Engineering approach using Semantic Web technologies?)
 @snapend
 
 
@@ -319,115 +320,6 @@ University Medical Centres (UMCs)
 
 
 ---?color=linear-gradient(135deg, #fff1eb, #ffffff)
-@title[Some Preliminaries]
-## @color[black](Some preliminaries)
-@fa[arrow-down text-black]
-
-+++?color=linear-gradient(80deg, #fff1eb 50%, #4487F2 50%)
-@title[Contents]
-
-@snap[west text-center text-14 text-bold text-italic text-black  span-50]
-Preliminaries
-@snapend
-
-@snap[east text-center text-white span-45]
-@ol[split-screen-list text-06](false)
-- Ontology
-- Resource Description Framework (RDF)
-- Linked Data
-@size[0.9em](SPARQL will be shown through results)
-
-
-@olend
-@snapend
-
-
-+++
-@title[Ontology]
-
-@snap[north span-100 text-12]
-Ontology <br/><br/>
-@fa[quote-left text-06](_A formal, explicit, shared specification of a conceptualization of a domain._)
-@snapend
-
-
-@snap[west text-center text-black span-45]
-<br/><br/>
-@ul[split-screen-list text-06](false)
-- Hierarchical concepts
-- Attributes & relations
-- Restrictions
-- Instances of concepts
-@ulend
-@snapend
-
-
-@snap[east text-center text-black span-45]
-<br/><br/><br/><br/>
-
-![onto](assets/img/ontology.png)
-@snapend
-
-
-+++
-@title[RDF]
-@snap[north text-12]
-Resource Description Framework - RDF
-@snapend
-
-
-@snap[west text-center text-black span-100]
-<br/><br/><br/>
-@ul[list-content-concise text-08](false)
-- Represention: **triples** of subject-predicate-object
-  - Subject: a (web) resource
-  - Predicate: a relation connecting subject to object
-  - Object: web resource or a plain value<br/><br/>
-
-- A collection of triples is known as an **RDF graph**.
-- A collection of RDF graphs is an **RDF dataset**.
-  - An RDF dataset will be created for this project.
-@ulend
-@snapend
-
-+++
-@title[RDF-Example]
-@snap[north text-12]
-RDF Example
-@snapend
-
-@snap[east span-50 fragment]
-![EXRDF](assets/img/sample_graph_ext.png)
-@snapend
-
-@snap[west span-50]
-![EXRDF](assets/img/examplerdf.png)
-@snapend
-
-+++
-@title[Linked Data]
-@snap[north text-12]
-Linked Data
-@snapend
-
-
-@snap[west list-content-concise span-50]
-@size[0.8em](Main principles)
-@ol[text-05](false)
-- Use URIs/IRIs as names for resources.
-- Use HTTP/IRIs so that people can look up those names.
-- When someone looks up a URI/IRI, provide useful information.
-- Include links to other URIs/IRIs, so they can discover more things.
-@olend
-<br><br>
-@snapend
-
-@snap[east span-50]
-![LOD](assets/img/lod-cloud-sm.png)
-@snapend
-
-
----?color=linear-gradient(135deg, #fff1eb, #ffffff)
 
 @title[Methods]
 
@@ -441,7 +333,7 @@ Knowledge Model <br/>
 @snapend
 
 @snap[west  span-100]
-Knowledge and reasoning features:<br/><br/>
+Identify knowledge and reasoning features:<br/><br/>
 @ol[list-content-verbose](false)
 - Task knowledge: decomposing the task into inferences
 - Inference knowledge: modeling the main inference procedures
@@ -505,7 +397,7 @@ Domain: aggregation of RDF graphs
 
 
 
-@snap[west span-40]
+@snap[east fragment span-40]
 #### MeSH
 
 @size[0.9em](**8.699.638** statements) <br/>
@@ -517,7 +409,7 @@ Domain: aggregation of RDF graphs
 ![MESHDATA](assets/img/mesh_data.png)
 @snapend
 
-@snap[east span-35]
+@snap[west span-35]
 #### ICD10
 
 @size[0.9em](**85.597** statements) <br/>
@@ -692,16 +584,15 @@ BioPortal-2018AA<br/><br/>
 @snapend
 
 @snap[east list-content-concise fragment span-50]
-SNOMED-CT mapping tool<br/><br/>
+SNOMED-CT mapping tool<br/><br>
 
-@ul[list-bullets-black text-06](false)
-- **I-MAGIC**: Algorithm that implements real-time mapping between SNOMEDCT and ICD10CM
+@ul[list-bullets-black text-07](false)
+- Mappings between SNOMED and ICD10CM
 - All mappings are in a file that can be accessed with the UMLS or SNOMED License.
 - Version: March 2018 (same as with BioPortal)
 - Only **1-to-1** mappings considered:<br/>- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;78.954 mappings<br/>- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **4205** mappings with BioPortal
 @ulend
 @snapend
-
 @snap[south-west fragment span-50]
 @box[bg-green span-90](Union total: **5.699** mappings)
 @snapend
@@ -832,7 +723,7 @@ Map all articles with:<br><br>
 @title[SPARQL TASK1]
 @code[xml text-black code-wrap code-reveal-fast text-06](src/sparql/query.rq)
 
-@[1-8](Prefixes)
+@[1-8, zoom-15](Prefixes)
 @[10](Pair selection)
 @[11-14](Select all Radboud articles with their MeSH headings.)
 @[15-22](Filter by years of publication)
