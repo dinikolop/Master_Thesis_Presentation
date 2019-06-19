@@ -78,9 +78,9 @@ Note:
 <br>
 @ul[text-black]
 - Electronic Health Records (EHRs)
-- Medical Classification Systems
-- Databases with academic and scientific articles
-- Controlled vocabularies
+- Medical Classification Systems (ICD10)
+- Databases with academic and scientific articles (PubMed)
+- Controlled vocabularies (MeSH)
 @ulend
 @snapend
 
@@ -198,43 +198,6 @@ Note:
 @snapend
 
 
-+++?image=template/img/bg/c1.jpg&position=center&size=100% 65%
-@title[Knowledge sources]
-@snap[north span-100]
-@size[1.5em](Knowledge sources)
-@snapend
-
-@snap[west text-center span-50 text-08]
-<u>ICD10</u> <br/><br/>
-
-@ul[list-bullets-black text-08](false)
-
-- International Classification of Diseases - 10<sup>th</sup> revision
-- Reporting diagnosis codes for patients.
-- Monohierarchical Tree Structure
-- Statistical classification system:
-  - Mutually exclusive nodes
-  - Exhaustive
-  - Residual categories
-@ulend
-
-@snapend
-
-@snap[east text-center fragment text-08 span-50]
-<u>MeSH</u><br/><br/>
-
-@ul[list-bullets-black text-08](false)
-
-- Medical Subject Headings
-- Controlled vocabulary created by NLM.
-- Hierarchical terminology for indexing biomedical info
-- Indexing of MEDLINE citations
-- MEDLINE is accessed by **PubMed**:
-    - database, search engine for biomedical articles
-    - over 29 million citations
-@ulend
-@snapend
-
 +++
 @title[Semantic Web technologies]
 @snap[north span-100]
@@ -274,21 +237,7 @@ Note:
 @fa[arrow-down text-black]
 
 
-+++
 
-@title[Main points]
-@snap[north span-100]
-@size[1.5em](Main points)
-@snapend
-
-@snap[west text-center text-black span-80]
-@ol[split-screen-list text-06](false)
-- **Problem:** correlation between patient groups and articles.
-- **Motivation:** Dutch UMC case.
-- **Approach:** Knowledge Engineering using Linked Data methods and tools.
-
-@olend
-@snapend
 
 +++?color=linear-gradient(135deg, #ffffff, #4487F2)
 @title[Main Research Question]
@@ -333,7 +282,8 @@ Note:
 @snap[midpoint text-center text-black span-100]
 @ol[split-screen-list text-09](false)
 - Domain knowledge: aggregating RDF graphs
-- Generation of a PubMed Ontology
+- Construction of a PubMed Ontology
+- RDF-izing PubMed
 - Gathering Community Based mappings
 - Mapping Evaluation
 
@@ -349,7 +299,7 @@ Domain Knowledge:aggregating RDF graphs (1/2)
 @snapend
 @title[RDF graph aggregation]
 @snap[north text-12 span-60]
-Domain Knowledge: aggregation of RDF graphs
+1. Domain Knowledge: aggregation of RDF graphs
 @snapend
 
 @snap[west  span-100]
@@ -400,7 +350,7 @@ PubMed (1/7)
 
 @title[PubMed]
 @snap[north text-12]
-PubMed
+2. Construction of a PubMed Ontology
 @snapend
 
 @snap[west text-black text-08]
@@ -460,7 +410,7 @@ PubMed (4/7)
 @title[RDFizing PubMed]
 
 @snap[north text-black ]
-### RDF-izing PubMed<br><br>
+### 3. RDF-izing PubMed<br><br>
 @snapend
 @snap[west list-content-verbose text-black]
 @ul[]
@@ -587,7 +537,7 @@ Mappings evaluation (1/1)
 @snapend
 @title[Mapping evaluation]
 @snap[north text-12]
-Mapping evaluation
+5. Mapping evaluation
 @snapend
 
 @snap[west list-content-concise text-08 span-100]
@@ -840,6 +790,43 @@ contact: d.nikolopoulos@vu.nl
 
 ---
 @title[Supplementary slides]
+
++++?image=template/img/bg/c1.jpg&position=center&size=100% 65%
+@title[Knowledge sources]
+@snap[north span-100]
+@size[1.5em](Knowledge sources)
+@snapend
+
+@snap[west text-center span-50 text-08]
+<u>ICD10</u> <br/><br/>
+
+@ul[list-bullets-black text-08](false)
+
+- International Classification of Diseases - 10<sup>th</sup> revision
+- Reporting diagnosis codes for patients.
+- Monohierarchical Tree Structure
+- Statistical classification system:
+  - Mutually exclusive nodes
+  - Exhaustive
+  - Residual categories
+@ulend
+
+@snapend
+
+@snap[east text-center fragment text-08 span-50]
+<u>MeSH</u><br/><br/>
+
+@ul[list-bullets-black text-08](false)
+
+- Medical Subject Headings
+- Controlled vocabulary created by NLM.
+- Hierarchical terminology for indexing biomedical info
+- Indexing of MEDLINE citations
+- MEDLINE is accessed by **PubMed**:
+    - database, search engine for biomedical articles
+    - over 29 million citations
+@ulend
+@snapend
 
 ## @color[black](Supplementary slides)
 @fa[arrow-down text-black]
