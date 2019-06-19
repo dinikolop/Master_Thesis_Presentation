@@ -9,7 +9,7 @@
 @snap[south-east byline text-black text-06]
 Vrije Universiteit Amsterdam<br/>
 Artificial Intelligence<br/>2<sup>nd</sup> KIM presentation<br/>
-Supervised by Prof. Annette ten Teije
+Supervised by Annette ten Teije
 @snapend
 
 Note:
