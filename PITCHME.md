@@ -41,9 +41,7 @@ Outline
 
 
 +++?image=template/img/bg/c1.jpg&position=center&size=100% 65%
-@snap[south-east template-note text-black]
-Context & use case (1/7)
-@snapend
+
 
 @title[Domain and Problem Statement]
 
@@ -62,10 +60,6 @@ Context & use case (1/7)
 
 +++?color=linear-gradient(90deg, #ffffff 50%, #4487F2 50%)
 @title[Text + Image Centered]
-@snap[south-east template-note text-black]
-Context & use case (2/7)
-@snapend
-
 
 @snap[north-west span-40 text-center]
 @color[#text-black](@size[1em](<u>Knowledge</u>))
