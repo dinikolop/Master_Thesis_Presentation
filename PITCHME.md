@@ -164,38 +164,7 @@ Note:
 @snapend
 
 
-+++
-@title[Interoperability Problem]
-@snap[north span-100]
-@size[1.5em](Interoperability Problem)
-@snapend
 
-
-@snap[west list-content-verbose span-100]
-@ul[list-bullets-black](false)
-- Various Disease Ontologies
-  - Different content, focus, granularity
-  - Different purpose, e.g: for statistics, retrieval, patient reports...
-@snap[fragment]
-- Considering community-based mapping efforts such as:
-@snapend
-@olend
-<br><br>
-@snapend
-
-
-@snap[fragment]
-@snap[south-west span-33]
-![UMLS](assets/img/umls.jpeg)
-@snapend
-
-@snap[south span-33]
-![BioPortal](assets/img/logo.png)
-@snapend
-
-@snap[south-east span-33]
-![snomed](assets/img/SNOMED-CT-5.png)
-@snapend
 
 
 +++
@@ -281,10 +250,9 @@ Note:
 +++
 @snap[midpoint text-center text-black span-100]
 @ol[split-screen-list text-09](false)
-- Domain knowledge: aggregating RDF graphs
+- Domain knowledge: aggregation of RDF graphs
 - Construction of a PubMed Ontology
-- RDF-izing PubMed
-- Gathering Community Based mappings
+- Community Based mappings
 - Mapping Evaluation
 
 @olend
@@ -295,7 +263,7 @@ Note:
 
 +++
 @snap[south-west template-note text-gray]
-Domain Knowledge:aggregating RDF graphs (1/2)
+Domain Knowledge:aggregating RDF graphs (1/1)
 @snapend
 @title[RDF graph aggregation]
 @snap[north text-12 span-60]
@@ -307,16 +275,170 @@ Domain Knowledge:aggregating RDF graphs (1/2)
 - **ICD10:** BioPortal
 - **MeSH:** BioPortal
 - **PubMed:** no maintained version
-- **Mappings:** BioPortal and SNOMED-CT mapping tool
 @olend
 @snapend
 
+
+
+
++++
+@snap[south-west template-note text-gray]
+PubMed (1/3)
+@snapend
+
+@title[PubMed]
+@snap[north text-12]
+2. Construction of a PubMed Ontology
+@snapend
+@snap[west text-black text-08]
+Some projects:<br/>
+@ul[](false)
+  - **bio2rdf** (PubMed not included in latest versions)
+  - **Biotea** (PubMed Central, No MeSH terms)
+@ulend  
+<br/>
+<br/>
+
+@ul[](false)
+- XML release by NLM each December
+- Updates on a daily basis
+- Extract-Transform-Load into Linked Data
+- Baseline: **2018**
+@ulend
+@snapend
+
+
+
+
++++
+@snap[south-west template-note text-gray]
+PubMed (2/3)
+@snapend
+@title[PubMed as XML]
+@snap[north text-12 span-100]
+PubMed as XML <br><br>
+
+@code[xml code-wrap text-08  code-reveal-fast](src/xml/example.xml)
+
+@[1-13](MEDLINE citation info)
+@[15-27](Journal Info)
+@[40-48](Author list)
+@[90-100](MeSH Headings)
+@[136-160](PubMed Data)
+@snapend
+
++++
+@snap[south-west template-note text-gray]
+PubMed (3/3)
+@snapend
+@title[PubMed Domain Schema]
+
+@snap[west text-white text-08]
+@box[bg-blue](PubMed<br/>Domain<br/>Schema)
+@snapend
+
+@snap[east span-80]
+![PUBMEDSCHEMA](assets/img/Optimized-PubMed.jpg)
+
+
+
++++
+@title[Community-based mappings]
+@snap[south-west template-note text-gray]
+Community based mappings (1/1)
+@snapend
+@snap[north span-100 text-12]
+3. Community-based Mappings
+@snapend
+
+
+@snap[west list-content-verbose span-100]
+@ul[list-bullets-black](false)
+- Various Disease Ontologies
+  - Different content, focus, granularity
+  - Different purpose, e.g: for statistics, retrieval, patient reports...
+@snap[fragment]
+- Considering community-based mapping efforts such as:
+@snapend
+@olend
+<br><br>
+@snapend
+
+
+@snap[fragment]
+@snap[south-west span-33]
+![UMLS](assets/img/umls.jpeg)
+@snapend
+
+@snap[south span-33]
+![BioPortal](assets/img/logo.png)
+@snapend
+
+@snap[south-east span-33]
+![snomed](assets/img/SNOMED-CT-5.png)
+@snapend
+
+
+
+
++++
+@snap[south-west template-note text-gray]
+Mappings evaluation (1/1)
+@snapend
+@title[Mapping evaluation]
+@snap[north text-12]
+4. Mapping evaluation
+@snapend
+
+@snap[west list-content-concise text-08 span-100]
+Consider 3 categories of mappings:<br/><br/>
+@ol[text-08](false)
+- Mappings achieved by all methods.
+- Mappings achieved only by SNOMED-CT mapping tool.
+- Mappings achieved only by BioPortal methods.
+
+@olend
+<br>
+<br>
+@ul[text-08](false)
+- Large enough samples.<br/>
+- Expert evaluation on a subset (**315** random mappings)
+- **χ<sup>2</sup> test of homogeneity** on results.
+@ulend
+@snapend
+
+---?color=linear-gradient(135deg, #fff1eb, #ffffff)
+
+@title[Analysis]
+
+## @color[black](Results & Analysis)
+@fa[arrow-down text-black]
+
++++
+@snap[midpoint text-center text-black span-100]
+@ul[split-screen-list text-08](false)
+- Subquestion 1: Domain Knoweledge Representation:
+  - ICD10 & MeSH Ontologies
+  - RDF-izing PubMed
+  - Mappings
+- Subquestion 2: Mappings Distribution & Quality
+- Subquestion 3: SPARQL
+  - Two tasks
+- Example insights
+@ulend
+@snapend
+
++++
+@title[subquestion 1]
+@snap[midpoint  text-left span-100]
+@box[bg-blue text-08 text-left text-white](Sub-question 1 (**domain knowledge representation**) # <ol style="padding-left:20px"><li> **Patient groups** - BioPortal ICD10<br/><br/></li><li>**Publication & Topics** - Constructed RDF graph of PubMed / BioPortal MeSH<br/><br/></li><li>**Mappings** - BioPortal & SNOMED-CT</li></ol><br><br>)
+@snapend
 
 +++?color=linear-gradient(90deg, #ffffff 50% , #4487F2 50%)
 @title[BioPortal MeSH and ICD10]
 
 @snap[south-west template-note text-gray]
-Domain Knowledge:aggregating RDF graphs (2/2)
+ICD10 & MeSH
 @snapend
 
 @snap[east fragment span-40]
@@ -345,72 +467,12 @@ Domain Knowledge:aggregating RDF graphs (2/2)
 
 +++
 @snap[south-west template-note text-gray]
-PubMed (1/7)
-@snapend
-
-@title[PubMed]
-@snap[north text-12]
-2. Construction of a PubMed Ontology
-@snapend
-
-@snap[west text-black text-08]
-Some projects:<br/>
-@ul[](false)
-  - **bio2rdf** (PubMed not included in latest versions)
-  - **Biotea** (PubMed Central, No MeSH terms)
-@ulend  
-<br/>
-<br/>
-
-@ul[](false)
-- XML release by NLM each December
-- Updates on a daily basis
-- Extract-Transform-Load into Linked Data
-- Baseline: **2018**
-@ulend
-@snapend
-
-
-
-
-+++
-@snap[south-west template-note text-gray]
-PubMed (2/7)
-@snapend
-@title[PubMed as XML]
-@snap[north text-12 span-100]
-PubMed as XML <br><br>
-
-@code[xml code-wrap text-08  code-reveal-fast](src/xml/example.xml)
-
-@[1-13](MEDLINE citation info)
-@[15-27](Journal Info)
-@[40-48](Author list)
-@[90-100](MeSH Headings)
-@[136-160](PubMed Data)
-@snapend
-
-+++
-@snap[south-west template-note text-gray]
-PubMed (3/7)
-@snapend
-@title[PubMed Domain Schema]
-
-@snap[west text-white text-08]
-@box[bg-blue](PubMed<br/>Domain<br/>Schema)
-@snapend
-
-@snap[east span-80]
-![PUBMEDSCHEMA](assets/img/Optimized-PubMed.jpg)
-
-+++
-@snap[south-west template-note text-gray]
-PubMed (4/7)
+PubMed (1/4)
 @snapend
 @title[RDFizing PubMed]
 
 @snap[north text-black ]
-### 3. RDF-izing PubMed<br><br>
+### RDF-izing PubMed<br><br>
 @snapend
 @snap[west list-content-verbose text-black]
 @ul[]
@@ -433,7 +495,7 @@ PubMed (4/7)
 
 +++
 @snap[south-west template-note text-gray]
-PubMed (5/7)
+PubMed (2/4)
 @snapend
 @title[PubMed as RDF]
 
@@ -450,7 +512,7 @@ PubMed as RDF<br><br>
 
 +++
 @snap[south-west template-note text-gray]
-PubMed (6/7)
+PubMed (3/4)
 @snapend
 @title[PubMed 2018 in numbers]
 
@@ -466,12 +528,12 @@ PubMed in Numbers
 @snapend
 
 @snap[fragment south-east template-note text-orange]
-Create RDF subsets to optimize querying!
+Create RDF subsets to optimize querying!RDF-
 @snapend
 
 +++
 @snap[south-west template-note text-gray]
-PubMed (7/7)
+PubMed (4/4)
 @snapend
 @title[Subset: Radboud UMC]
 @snap[north text-black]
@@ -496,14 +558,7 @@ Subset: Radboud UMC
 @ulend
 @snapend
 
-
-
-
-
 +++?color=linear-gradient(90deg, #fff1eb 50%, #4487F2 50%)
-@snap[south-west template-note text-gray]
-Community based mappings (1/1)
-@snapend
 @title[Source: Mappings]
 
 @snap[west text-center text-08 list-content-verbose span-50]
@@ -529,45 +584,6 @@ Community based mappings (1/1)
 @snapend
 @snap[south-west fragment span-50]
 @box[bg-green span-90](Union total: **5.699** mappings)
-@snapend
-
-+++
-@snap[south-west template-note text-gray]
-Mappings evaluation (1/1)
-@snapend
-@title[Mapping evaluation]
-@snap[north text-12]
-5. Mapping evaluation
-@snapend
-
-@snap[west list-content-concise text-08 span-100]
-Consider 3 categories of mappings:<br/><br/>
-@ol[text-08](false)
-- Mappings achieved by all methods.
-- Mappings achieved only by SNOMED-CT mapping tool.
-- Mappings achieved only by BioPortal methods.
-
-@olend
-<br>
-<br>
-@ul[text-08](false)
-- Large enough samples.<br/>
-- Expert evaluation on a subset (**315** random mappings)
-- **χ<sup>2</sup> test of homogeneity** on results.
-@ulend
-@snapend
-
----?color=linear-gradient(135deg, #fff1eb, #ffffff)
-
-@title[Analysis]
-
-## @color[black](Results & Analysis)
-@fa[arrow-down text-black]
-
-+++
-@title[subquestion 1]
-@snap[midpoint  text-left span-100]
-@box[bg-blue text-08 text-left text-white](Sub-question 1 (**domain knowledge representation**) # <ol style="padding-left:20px"><li> **Patient groups** - BioPortal ICD10<br/><br/></li><li>**Publication & Topics** - Generated RDF graph of PubMed / BioPortal MeSH<br/><br/></li><li>**Mappings** - BioPortal & SNOMED-CT</li></ol><br><br>)
 @snapend
 
 +++
